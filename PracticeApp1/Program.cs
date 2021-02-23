@@ -21,7 +21,7 @@ namespace PracticeApp1
             PopUpBook popUpBook = new PopUpBook("PopUp Book", "AndyJPG", 30, 2);
             Console.WriteLine(popUpBook.GetString());*/
 
-            Numbers();
+            ForLoopChallenge();
         }
 
         static void Numbers()
@@ -87,6 +87,20 @@ namespace PracticeApp1
         static double GetPow(double baseNum, double powNum)
         {
             return Math.Pow(baseNum, powNum);
+        }
+
+        static void ForLoopChallenge()
+        {
+            int sum = 0;
+            for (int i = 1; i <= 20; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    sum += i;
+                }
+            }
+
+            Console.WriteLine(sum);
         }
 
         static void ForLoop()
