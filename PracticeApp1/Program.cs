@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PracticeApp1
 {
@@ -21,7 +22,7 @@ namespace PracticeApp1
             PopUpBook popUpBook = new PopUpBook("PopUp Book", "AndyJPG", 30, 2);
             Console.WriteLine(popUpBook.GetString());*/
 
-            ForLoopChallenge();
+            FibonacciNumbers101();
         }
 
         static void Numbers()
@@ -89,7 +90,69 @@ namespace PracticeApp1
             return Math.Pow(baseNum, powNum);
         }
 
-        static void ForLoopChallenge()
+        static void FibonacciNumbers101()
+        {
+            var fibonacciNumbers = new List<int> { 1, 1 };
+            int stopPoint = 20;
+
+            while (fibonacciNumbers.Count < stopPoint)
+            {
+                var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+                var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+                fibonacciNumbers.Add(previous + previous2);
+            }
+
+            foreach (var number in fibonacciNumbers)
+            {
+                Console.WriteLine(number);
+            }
+        }
+
+        static void SortSearchIndexLists101()
+        {
+            var names = new List<string> { "<name>", "Ana", "Emily", "Andy", "Claire" };
+            int index = names.IndexOf("Andy");
+
+            if (index == -1)
+            {
+                Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+            }
+            else
+            {
+                Console.WriteLine($"Found {names[index]} at {index}");
+            }
+
+            names.Sort();
+            foreach (var name in names)
+            {
+                Console.WriteLine(name);
+            }
+        }
+
+        static void ListPractice101()
+        {
+            // List<string> names = new List<string> { "<name>", "Andy", "Ana" };
+            var names = new List<string> { "<name>", "Andy", "Ana" };
+
+            names.Add("Maria");
+            names.Add("Bill");
+            names.Remove("Ana");
+
+            Console.WriteLine(names[2]);
+
+            foreach (string name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            for (int i = 0; i < names.Count; i++)
+            {
+                Console.WriteLine($"Hello {names[i].ToUpper()}!");
+            }
+        }
+
+        static void ForLoopChallenge101()
         {
             int sum = 0;
             for (int i = 1; i <= 20; i++)
