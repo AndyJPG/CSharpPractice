@@ -68,7 +68,7 @@ namespace BankyStuffLibrary
             foreach(var item in allTransactions)
             {
                 //ROWS
-                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.AmountForHumans}\t{item.Notes}");
             }
             return report.ToString();
         }
