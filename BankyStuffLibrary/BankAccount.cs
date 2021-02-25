@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MySuperBank
+namespace BankyStuffLibrary
 {
     public class BankAccount
     {
