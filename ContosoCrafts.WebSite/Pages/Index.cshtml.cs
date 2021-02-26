@@ -16,6 +16,7 @@ namespace ContosoCrafts.WebSite.Pages
         public JsonFileProductService ProductService;
         public IEnumerable<Product> Products { get; private set; }
 
+        // RESEARCH: How Index Model works. When and where the function gets call.
         public IndexModel(ILogger<IndexModel> logger,
             JsonFileProductService productService)
         {
