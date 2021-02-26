@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeApp1", "PracticeApp1\PracticeApp1.csproj", "{1FE7611B-B9E3-44EC-93C9-7C8AC51E2CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySuperBank", "MySuperBank\MySuperBank.csproj", "{525078A5-9E73-4DBF-A6FB-AAC61B3F2C91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySuperBank", "MySuperBank\MySuperBank.csproj", "{525078A5-9E73-4DBF-A6FB-AAC61B3F2C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankyStuffLibrary", "BankyStuffLibrary\BankyStuffLibrary.csproj", "{88017775-666E-40B1-8508-ECDA704394C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankyStuffLibrary", "BankyStuffLibrary\BankyStuffLibrary.csproj", "{88017775-666E-40B1-8508-ECDA704394C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingTests", "BankingTests\BankingTests.csproj", "{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{88017775-666E-40B1-8508-ECDA704394C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88017775-666E-40B1-8508-ECDA704394C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88017775-666E-40B1-8508-ECDA704394C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
