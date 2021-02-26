@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySuperBank", "MySuperBank\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankyStuffLibrary", "BankyStuffLibrary\BankyStuffLibrary.csproj", "{88017775-666E-40B1-8508-ECDA704394C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingTests", "BankingTests\BankingTests.csproj", "{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingTests", "BankingTests\BankingTests.csproj", "{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoCrafts.WebSite", "ContosoCrafts.WebSite\ContosoCrafts.WebSite.csproj", "{4E1EB3E8-42DE-4A85-BB53-CB43D20650D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04DA5C44-00DE-4A7E-9559-BB848A40CE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1EB3E8-42DE-4A85-BB53-CB43D20650D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1EB3E8-42DE-4A85-BB53-CB43D20650D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1EB3E8-42DE-4A85-BB53-CB43D20650D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1EB3E8-42DE-4A85-BB53-CB43D20650D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
