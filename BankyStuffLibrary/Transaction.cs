@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Humanizer;
 
-namespace MySuperBank
+namespace BankyStuffLibrary
 {
     public class Transaction
     {
         public decimal Amount { get; }
+        public string AmountForHumans
+        { 
+            get
+            {
+                return ((int)Amount).ToWords();
+            }
+        }
         public DateTime Date { get; }
         public string Notes { get; }
 

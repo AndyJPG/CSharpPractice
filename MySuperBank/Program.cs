@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankyStuffLibrary;
+using System;
 
 namespace MySuperBank
 {
@@ -11,6 +12,12 @@ namespace MySuperBank
 
             account.MakeWithdrawal(120, DateTime.Now, "Hammock");
             Console.WriteLine(account.Balance);
+
+            account.MakeWithdrawal(2, DateTime.Now, "Coffee");
+            account.MakeWithdrawal(1.3M, DateTime.Now, "Diet Coke");
+            account.MakeWithdrawal(2.5M, DateTime.Now, "Coke");
+            account.MakeWithdrawal(120, DateTime.Now, "Catch");
+            account.MakeWithdrawal(2.5M, DateTime.Now, "Coke Zero");
 
             account.MakeWithdrawal(360, DateTime.Now, "Xbox");
             Console.WriteLine(account.Balance);

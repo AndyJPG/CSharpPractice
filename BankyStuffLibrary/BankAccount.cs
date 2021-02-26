@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MySuperBank
+namespace BankyStuffLibrary
 {
     public class BankAccount
     {
@@ -68,7 +68,7 @@ namespace MySuperBank
             foreach(var item in allTransactions)
             {
                 //ROWS
-                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.AmountForHumans}\t{item.Notes}");
             }
             return report.ToString();
         }
