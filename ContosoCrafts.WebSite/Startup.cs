@@ -28,6 +28,7 @@ namespace ContosoCrafts.WebSite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddServerSideBlazor();
             services.AddControllers();
             //Adding custom services
             services.AddTransient<JsonFileProductService>();
@@ -59,6 +60,7 @@ namespace ContosoCrafts.WebSite
                 // RESEARCH: How the application learn about application services
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
+                endpoints.MapBlazorHub();
 
                 // WEB API but not in good practice
                 //endpoints.MapGet("/products", (context) =>
