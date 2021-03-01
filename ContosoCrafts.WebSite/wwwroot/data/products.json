@@ -54,7 +54,16 @@
     "Url": "https://twitter.com/sailorhg/status/1090113666911891456",
     "Title": "Light-up Corsage",
     "Description": "Light-up corsage I made with my summer intern.",
-    "Ratings": null
+    "Ratings": [
+      3,
+      4,
+      2,
+      2,
+      1,
+      3,
+      1,
+      4
+    ]
   },
   {
     "Id": "sailorhg-kit",
