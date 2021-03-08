@@ -17,10 +17,29 @@ namespace RazorPagesMovie.Pages.BookList
             _db = db;
         }
 
+        [BindProperty]
         public Book Book { get; set; }
 
         public void OnGet()
         {
+            ViewData["test"] = "Not Hit";
+        }
+
+        // What is Task class for
+        //Examin async in c#
+        public async Task<IActionResult> OnPostAsync()
+        {
+            ViewData["test"] = "hit";
+            if (ModelState.IsValid)
+            {
+                await _db.Book.AddAsync(Book);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("Index");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
