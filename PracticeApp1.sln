@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingTests", "BankingTest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoCrafts.WebSite", "ContosoCrafts.WebSite\ContosoCrafts.WebSite.csproj", "{4E1EB3E8-42DE-4A85-BB53-CB43D20650D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{758D59CA-C92F-4FF9-8745-ACD62A66CE3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{758D59CA-C92F-4FF9-8745-ACD62A66CE3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
