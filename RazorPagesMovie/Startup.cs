@@ -32,6 +32,9 @@ namespace RazorPagesMovie
             // When use code below run without debugging to view change in live
             services.AddRazorPages();
 
+            // Add controllers
+            services.AddControllersWithViews();
+
             services.AddDbContext<ApplicationDbContext>(option => 
                     option.UseSqlServer(Configuration.GetConnectionString("RazorPagesMovieContext")));
 
@@ -63,6 +66,8 @@ namespace RazorPagesMovie
 
             app.UseEndpoints(endpoints =>
             {
+                // Like adding razor pages we needed to map controllers after adding controllers services
+                endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
         }
