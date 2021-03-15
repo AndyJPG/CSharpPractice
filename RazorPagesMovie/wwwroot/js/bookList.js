@@ -19,8 +19,12 @@ function loadDataTable() {
                 "data": "id",
                 "render": function (data) {
                     return `<div class="text-center">
-        <a href="/BookList/Edit?id=${data}" class='btn btn-success text-white' style='cursor:pointer; width:70px;'>
+        <a href="/BookList/Create?id=${data}" class='btn btn-success text-white' style='cursor:pointer; width:70px;'>
         Edit
+        </a>
+        &nbsp;
+        <a href="/BookList/Upsert?id=${data}" class='btn btn-success text-white' style='cursor:pointer; width:140px;'>
+        Upsert Edit
         </a>
         &nbsp;
         <a class='btn btn-danger text-white' style='cursor:pointer; width:70px;'
@@ -61,7 +65,7 @@ function Delete(url) {
                         toastr.error(data.message);
                     }
                 }
-            })
+            });
         }
-    })
+    });
 }
