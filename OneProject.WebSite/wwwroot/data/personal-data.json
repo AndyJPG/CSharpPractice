@@ -1,0 +1,237 @@
+{
+    "about-me": [
+        {
+            "subtitle": "Solve problems before code",
+            "body": "A developer who had experience in building SaaS application using mainly React and Node JS. Provided solutions to fix application issues and improve performance. Automated calculation process with Python to increase the efficiency of the company. Had experience in Agile working environment and familiar with sprint planning, scrum meeting, and sprint retro."
+        },
+        {
+            "subtitle": "Design with detail",
+            "body": "A Graphic Designer who had experience in building a SaaS application user interface using mainly Photoshop. Provided solutions to fix web application UI issues and improve performance. Involved in design projects, and responsible for thumbnailing, concept development, visual exploration, and concept refinement. Ability to escalate company brand awareness by identifying current creative industry trends and opportunities, and utilize it in company projects."
+        }
+    ],
+    "experience": [
+        {
+            "company-name": "B&E Foods",
+            "company-url": "https://www.linkedin.com/company/befoods/",
+            "position": "Developer - Part-time",
+            "start-date": "SEP 2020",
+            "end-date": "NOV 2020",
+            "location": "Melbourne",
+            "body": [
+                "• Improved process in getting customer data by using queries on Excel to retrieve data from Microsoft cloud database",
+                "• Improved precision in selecting desirable data by filtering and integrating data using SQL query string on Excel",
+                "• Designed consistent customer statement format by organizing Excel sheet using VBA code",
+                "• Reduced time in producing customer statements by 70% by processing and calculating data with Python, and presenting data with Excel",
+                "• Reduced human error in customer statement calculation process by 60% by processing and calculating data with Python",
+                "• Increased simplicity for non-technical staff to produce customer statements by creating interactive elements on Excel sheets using VBA code"
+            ]
+        },
+        {
+            "company-name": "B&E Foods",
+            "company-url": "https://www.linkedin.com/company/befoods/",
+            "position": "Developer Intern",
+            "start-date": "JUN 2020",
+            "end-date": "AUG 2020",
+            "location": "Melbourne",
+            "body": [
+                "• Increased visibility for the stock purchase team to compare history product purchase price by calculating and highlighting differences using Python and present in Excel",
+                "• Increased online store conversion rate by 40% by reducing website loading time",
+                "• Reduced online store website loading time by 80% by removing excessive DOM elements",
+                "• Increased online store website performance score on Google by 64% by removing excessive DOM elements"
+            ]
+        },
+        {
+            "company-name": "Cafeezy",
+            "company-url": "",
+            "position": "Full-stack Developer Intern",
+            "start-date": "OCT 2019",
+            "end-date": "DEC 2019",
+            "location": "Melbourne",
+            "body": [
+                "• Improved application’s performance in creating new items by 90% by removing unused React components from re-rendering",
+                "• Developed functionality for users to check their sales history in daily, weekly, monthly, and yearly format by creating sales history interval to retrieve integrated and filtered data",
+                "• Published and hosted single page website by using AWS S3 bucket",
+                "• Developed dynamic contact form for the static website by using AWS API Gateway, AWS SES and Node JS to develop AWS Lambda function",
+                "• Developed customizable AWS serverless mailing function by creating documentation for the lambda function and publishing it on GitHub",
+                "• Performed application version control by using Git",
+                "• Enhanced application code integrity by using ESLint to enforce coding style"
+            ]
+        },
+        {
+            "company-name": "Duuet",
+            "company-url": "https://www.duuet.com.au/",
+            "position": "Graphic Designer - Causel",
+            "start-date": "DEC 2018",
+            "end-date": "OCT 2019",
+            "location": "Melbourne",
+            "body": [
+                "• Increased the visual appearance of existing website by redesigning the website to align with design trend",
+                "• Designed digital and physical contents for display and presentation purpose by using Adobe Photoshop and InDesign",
+                "• Managed company online posts and digital contents by using WordPress back-end panel"
+            ]
+        },
+        {
+            "company-name": "T-ONE IMAGE",
+            "company-url": "https://www.t-oneimage.com.au/",
+            "position": "Graphic Designer - Causel",
+            "start-date": "APR 2017",
+            "end-date": "OCT 2019",
+            "location": "Melbourne",
+            "body": [
+                "• Managed company website contents and social media contents by using WordPress and social media platform",
+                "• Designed posters, printouts and brochures for presentation and advertising purpose by using Adobe InDesign and Photoshop",
+                "• Increased brand awareness by redesigning company website to align with company strategies and design trend",
+                "• Improved UI and UX by collaborating with developers to modify front-end code"
+            ]
+        },
+        {
+            "company-name": "T-ONE IMAGE",
+            "company-url": "https://www.t-oneimage.com.au/",
+            "position": "Graphic Designer Intern",
+            "start-date": "JAN 2017",
+            "end-date": "MAR 2017",
+            "location": "Melbourne",
+            "body": []
+        },
+        {
+            "company-name": "PIPEX",
+            "company-url": "",
+            "position": "Graphic Designer Intern",
+            "start-date": "JUN 2016",
+            "end-date": "SEP 2016",
+            "location": "Melbourne",
+            "body": [
+                "• Created visual identity design by using Adobe InDesign, Photoshop and Illustrator",
+                "• Designed advertising poster, print out, media content and brochure by using Adobe Photoshop and InDesign",
+                "• Improved website UI and UX by using Sketch and Adobe Photoshop",
+                "• Supported front end programmer in developing visual content by using Adobe Photoshop to create UI components"
+            ]
+        }
+    ],
+    "project-experience": [
+        {
+            "project-name": "OhFarm Application Project",
+            "project-url": "https://github.com/AndyJPG/OhFarmV2.0",
+            "start-date": "JAN 2019",
+            "end-date": "JUL 2019",
+            "location": "Melbourne",
+            "body": [
+                "• Designed a platform in providing kitchen gardening information by developing an iOS application using Swift and XCode IDE",
+                "• Created simple server for holding contents by storing contents in AWS S3 bucket with an accessible API gateway for retrieving data",
+                "• Increased the precision of information for kitchen plants by researching relevant datasets on Kaggle and government open data website and processing data with Python",
+                "• Improved visual appearance by designing UI components with Adobe Photoshop",
+                "• Improved user experience by conducting random user tests and target user surveys and refining the application based on feedback",
+                "• Managed each sprint cycle by performing sprint planning meeting, daily stand-up meeting, sprint review, and sprint retrospective"
+            ]
+        },
+        {
+            "project-name": "Cafeezy Website Redesign",
+            "project-url": "",
+            "start-date": "NOV 2019",
+            "end-date": "DEC 2019",
+            "location": "Melbourne",
+            "body": [
+                "• Redesigned Cafeezy website visual appearance by researching the company's goal, strategy and design trend, and creating prototypes using Adobe Photoshop",
+                "• Created website demonstration for presentation purpose by designing interactive website using Adobe XD",
+                "• Finalized visual appearance by conducting a presentation to key stakeholders and do modifications based on feedback"
+            ]
+        },
+        {
+            "project-name": "Duuet Website Redesign",
+            "project-url": "https://www.duuet.com.au/",
+            "start-date": "JAN 2018",
+            "end-date": "JUN 2018",
+            "location": "Melbourne",
+            "body": [
+                "• Increased brand awareness by redesigning Duuet website to align with its company strategies, goals and design trend",
+                "• Managed design process by performing essential research, brainstorming, ideation, drafting, creation, and finalizing work based on feedback",
+                "• Created new Duuet website by using Adobe Photoshop"
+            ]
+        }
+    ],
+    "professional-skills": [
+        {
+            "programming": [
+                "JavaScript",
+                "Node Js",
+                "HTML5",
+                "Git"
+            ],
+            "Research": [
+                "Data analysis",
+                "Design trends analysis"
+            ],
+            "Design": [
+                "Illustration & UI graphics",
+                "Photoshop",
+                "Print layout design with InDesign",
+                "UI mock ups with Sketch"
+            ],
+            "Collaboration": [
+                "Self Starter",
+                "Flexible",
+                "Detail oriented",
+                "Communicative",
+                "Time management",
+                "Teamwork",
+                "Problem-solving"
+            ],
+            "Prototyping": [
+                "Web prototyping using Adobe XD",
+                "Ineractive demo with HTML / CSS"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "school-name": "Monash University",
+            "school-major": "Master of Information Technology",
+            "start-date": "JUL 2017",
+            "end-date": "JUL 2019",
+            "location": "Melbourne",
+            "body": [
+                "• GPA: 2.7 ( WAM: 70.4 )",
+                "• Relevant Coursework: Algorithms and Data structures, Intelligent systems, Big data processing and management, Database analysis and processing, Business intelligence, Data warehousing, Software engineering"
+            ]
+        },
+        {
+            "school-name": "Deakin University",
+            "school-major": "Bachelor of Design",
+            "start-date": "JUL 2016",
+            "end-date": "JUL 2017",
+            "location": "Melbourne",
+            "body": [
+                "• GPA: 3.04 / 4.00 (Core GPA: 3.16 )",
+                "• Honors/Awards: Graduate with High Distinction (2017)",
+                "• Relevant Coursework: Computer and Art Design, Web design, UI and UX design, branding"
+            ]
+        },
+        {
+            "school-name": "Holmesglen Institute Tafe",
+            "school-major": "Diploma of Graphic Design & Advance Diploma of Graphic Design",
+            "start-date": "JAN 2014",
+            "end-date": "JUL 2016",
+            "location": "Melbourne",
+            "body": [
+                "• Relevant Coursework: Typographic design, Digital design, Branding and identity design, Interactive design"
+            ]
+        }
+    ],
+    "personal-information": [
+        {
+            "full-name": "peigeng jiang",
+            "email": "jiangpeigeng@gmail.com",
+            "phone": "+61 499 482 349",
+            "city": "Canberra, Australia"
+        }
+    ],
+    "languages": [
+        "english",
+        "chinese"
+    ],
+    "interests": [
+        "Music",
+        "Soccer",
+        "Reading"
+    ]
+}
