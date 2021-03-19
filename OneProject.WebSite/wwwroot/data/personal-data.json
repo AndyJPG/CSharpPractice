@@ -1,4 +1,20 @@
 {
+    "id": 0,
+    "name": "peigeng jiang",
+    "positions": [
+        "Developer",
+        "Graphic Designer"
+    ],
+    "social-media": [
+        {
+            "name": "behance",
+            "url": "https://www.behance.net/AndyPeigengJiang"
+        },
+        {
+            "name": "github",
+            "url": "https://github.com/AndyJPG"
+        }
+    ],
     "about-me": [
         {
             "subtitle": "Solve problems before code",
@@ -9,7 +25,7 @@
             "body": "A Graphic Designer who had experience in building a SaaS application user interface using mainly Photoshop. Provided solutions to fix web application UI issues and improve performance. Involved in design projects, and responsible for thumbnailing, concept development, visual exploration, and concept refinement. Ability to escalate company brand awareness by identifying current creative industry trends and opportunities, and utilize it in company projects."
         }
     ],
-    "experience": [
+    "experiences": [
         {
             "company-name": "B&E Foods",
             "company-url": "https://www.linkedin.com/company/befoods/",
@@ -108,7 +124,7 @@
             ]
         }
     ],
-    "project-experience": [
+    "project-experiences": [
         {
             "project-name": "OhFarm Application Project",
             "project-url": "https://github.com/AndyJPG/OhFarmV2.0",
