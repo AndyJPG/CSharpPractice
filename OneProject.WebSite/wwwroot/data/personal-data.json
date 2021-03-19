@@ -167,23 +167,33 @@
     ],
     "professional-skills": [
         {
-            "programming": [
+            "category": "programming",
+            "skills": [
                 "JavaScript",
                 "Node Js",
                 "HTML5",
                 "Git"
-            ],
-            "Research": [
+            ]
+        },
+        {
+            "category": "Research",
+            "skills": [
                 "Data analysis",
                 "Design trends analysis"
-            ],
-            "Design": [
+            ]
+        },
+        {
+            "category": "Design",
+            "skills": [
                 "Illustration & UI graphics",
                 "Photoshop",
                 "Print layout design with InDesign",
                 "UI mock ups with Sketch"
-            ],
-            "Collaboration": [
+            ]
+        },
+        {
+            "category": "Collaboration",
+            "skills": [
                 "Self Starter",
                 "Flexible",
                 "Detail oriented",
@@ -191,14 +201,17 @@
                 "Time management",
                 "Teamwork",
                 "Problem-solving"
-            ],
-            "Prototyping": [
+            ]
+        },
+        {
+            "category": "Prototyping",
+            "skills": [
                 "Web prototyping using Adobe XD",
                 "Ineractive demo with HTML / CSS"
             ]
         }
     ],
-    "education": [
+    "educations": [
         {
             "school-name": "Monash University",
             "school-major": "Master of Information Technology",

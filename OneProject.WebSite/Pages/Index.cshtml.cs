@@ -20,11 +20,15 @@ namespace OneProject.WebSite.Pages
             JsonFilePersonalDataService jsonFilePersonalDataService)
         {
             _logger = logger;
+
+            // Inject JsonFilePersonalDataService to Index model
             PersonalDataService = jsonFilePersonalDataService;
         }
 
         public void OnGet()
         {
+            // Trigger service function on website get request
+            // Pass data to personal property for access in Model
             Personal = PersonalDataService.GetPersonalData();
         }
     }

@@ -23,9 +23,15 @@ namespace OneProject.WebSite.Models
         [JsonPropertyName("project-experiences")]
         public List<ProjectExperience> ProjectExperiences { get; set; }
 
+        [JsonPropertyName("professional-skills")]
+        public List<ProfessionalSkill> ProfessionalSkills { get; set; }
+
+        public List<Education> Educations { get; set; }
+
         public override string ToString() => JsonSerializer.Serialize<Personal>(this);
     }
 
+    // Simple class for non-complicated data structure
     public class SocialMedia
     {
         public string Name { get; set; }
@@ -36,5 +42,11 @@ namespace OneProject.WebSite.Models
     {
         public string Subtitle { get; set; }
         public string Body { get; set; }
+    }
+
+    public class ProfessionalSkill
+    {
+        public string Category { get; set; }
+        public List<string> Skills { get; set; }
     }
 }
