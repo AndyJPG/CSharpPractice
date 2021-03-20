@@ -1,6 +1,9 @@
 {
     "id": 0,
     "name": "peigeng jiang",
+    "email": "jiangpeigeng@gmail.com",
+    "phone": "+61 499 482 349",
+    "city": "Canberra, Australia",
     "positions": [
         "Developer",
         "Graphic Designer"
@@ -244,14 +247,6 @@
             "body": [
                 "• Relevant Coursework: Typographic design, Digital design, Branding and identity design, Interactive design"
             ]
-        }
-    ],
-    "personal-information": [
-        {
-            "full-name": "peigeng jiang",
-            "email": "jiangpeigeng@gmail.com",
-            "phone": "+61 499 482 349",
-            "city": "Canberra, Australia"
         }
     ],
     "languages": [

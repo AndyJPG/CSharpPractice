@@ -11,6 +11,10 @@ namespace OneProject.WebSite.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string City { get; set; }
+
         public List<string> Positions { get; set; }
 
         [JsonPropertyName("social-media")]
@@ -26,7 +30,12 @@ namespace OneProject.WebSite.Models
         [JsonPropertyName("professional-skills")]
         public List<ProfessionalSkill> ProfessionalSkills { get; set; }
 
+
         public List<Education> Educations { get; set; }
+
+        public List<string> Languages { get; set; }
+
+        public List<string> Interests { get; set; }
 
         public override string ToString() => JsonSerializer.Serialize<Personal>(this);
     }

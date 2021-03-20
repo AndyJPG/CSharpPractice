@@ -4,7 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - OneProject.WebSite</title>
+
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/83a4dd657a.js" crossorigin="anonymous"></script>
+
+    <!-- Google font (font-family: 'Dosis', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/css/theme/plugins/plugins.css" />
+    <link rel="stylesheet" href="~/css/theme/style.css" />
+
+    <!-- Main style sheet -->
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
@@ -23,6 +37,9 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About Me</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -30,11 +47,17 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    @*<div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>*@
+
+    <div id="wrapper" class="wrapper">
+        @RenderBody()
     </div>
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
@@ -45,6 +68,10 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Theme script -->
+    <script src="~/js/theme/js/plugins.js"></script>
+    <script src="~/js/theme/js/main.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
