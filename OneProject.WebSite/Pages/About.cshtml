@@ -1,5 +1,6 @@
 ﻿@page
 @model OneProject.WebSite.Pages.AboutModel
+@using OneProject.WebSite.Models
 @{
     ViewData["Title"] = "About Me";
 }
@@ -25,29 +26,75 @@
 <!-- Page Conttent -->
 <main class="page-content">
 
-    <!-- About Us Area -->
+    <!-- About Me Area -->
     <div class="cr-section about-us-area section-padding-lg bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img src="img/others/about-image.jpg" alt="about image">
+                        <img src='@Model.Personal.AvatarUrl' alt="about image">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <h2>WELCOME TO <strong>KARIGOR</strong> WORLD</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis odio dignissimos ut illum necessitatibus veritatis velit explicabo harum rerum non consequuntur, est consectetur optio similique expedita iusto maiores esse saepe.</p>
+                        <h2>MY NAME IS <strong>@Model.Personal.Name</strong></h2>
+                        @foreach (AboutMe text in Model.Personal.AboutMes)
+                        {
+                            <h5>@text.Subtitle</h5>
+                            <p>@text.Body</p>
+                        }
                         <ul>
-                            <li>We love products that work perfectly and look beautiful.</li>
-                            <li>We create base on a deeply analysis of your project.</li>
-                            <li>We are create design with really high quality standards.</li>
-                            <li>Magni exercitationem delectus enim sunt magni atque odio.</li>
+                            <li>Email: @Model.Personal.Email</li>
+                            <li>Phone: @Model.Personal.Phone</li>
+                            <li>City: @Model.Personal.City</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- // About Me Area -->
+    <!-- Experience Section -->
+    <!-- Experience Details Area -->
+    <div class="cr-section portfolio-details-area section-padding-lg bg-white">
+        @foreach (Experience experience in Model.Personal.Experiences)
+        {
+            <div class="container">
+                <div class="row section-padding-top-sm">
+                    <div class="col-lg-12">
+                        <div class="portfolio-details-info">
+                            <h3 class="small-title-fullwidth"><span>@experience.CompanyName</span></h3>
+                            <h5 class="portfolio-title">@experience.Position</h5>
+                            @foreach (string paragraph in experience.Body)
+                            {
+                                <p>@paragraph</p>
+                            }
+                            <div class="post-share">
+                                <h6>Share:</h6>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="portfolio-details-meta">
+                                <ul>
+                                    <li><i class="fa fa-user"></i><span>Created by:</span> Akcent Chester</li>
+                                    <li><i class="fa fa-calendar"></i><span>Completed on:</span> 20 Jan 2017</li>
+                                    <li><i class="fa fa-coffee"></i><span>Skills:</span> HTML5 / WP / CSS3</li>
+                                    <li><i class="fa fa-link"></i><span>Client:</span> <a href="#">HasTech</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
     </div>
     <!--// About Us Area -->
     <!-- Counter Section -->

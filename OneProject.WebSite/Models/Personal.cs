@@ -15,6 +15,9 @@ namespace OneProject.WebSite.Models
         public string Phone { get; set; }
         public string City { get; set; }
 
+        [JsonPropertyName("avatar-url")]
+        public string AvatarUrl { get; set; }
+
         public List<string> Positions { get; set; }
 
         [JsonPropertyName("social-media")]
