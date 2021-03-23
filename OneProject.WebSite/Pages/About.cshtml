@@ -47,6 +47,14 @@
                             <li>Email: @Model.Personal.Email</li>
                             <li>Phone: @Model.Personal.Phone</li>
                             <li>City: @Model.Personal.City</li>
+                            <li>
+                                Follow Me:
+                                @foreach (SocialMedia socialMedia in Model.Personal.SocialMedias)
+                                {
+                                    <a href="@socialMedia.URL"><i class="fa fa-@socialMedia.Name fa-lg"></i></a>
+                                }
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -56,46 +64,55 @@
     <!-- // About Me Area -->
     <!-- Experience Section -->
     <!-- Experience Details Area -->
-    <div class="cr-section portfolio-details-area section-padding-lg bg-white">
-        @foreach (Experience experience in Model.Personal.Experiences)
-        {
-            <div class="container">
-                <div class="row section-padding-top-sm">
-                    <div class="col-lg-12">
-                        <div class="portfolio-details-info">
-                            <h3 class="small-title-fullwidth"><span>@experience.CompanyName</span></h3>
-                            <h5 class="portfolio-title">@experience.Position</h5>
-                            @foreach (string paragraph in experience.Body)
-                            {
-                                <p>@paragraph</p>
-                            }
-                            <div class="post-share">
-                                <h6>Share:</h6>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="portfolio-details-meta">
-                                <ul>
-                                    <li><i class="fa fa-user"></i><span>Created by:</span> Akcent Chester</li>
-                                    <li><i class="fa fa-calendar"></i><span>Completed on:</span> 20 Jan 2017</li>
-                                    <li><i class="fa fa-coffee"></i><span>Skills:</span> HTML5 / WP / CSS3</li>
-                                    <li><i class="fa fa-link"></i><span>Client:</span> <a href="#">HasTech</a></li>
-                                </ul>
-                            </div>
-                        </div>
+    <div class="cr-section blog-area section-padding-lg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>EXPERIENCE</h2>
                     </div>
                 </div>
             </div>
-        }
+            @foreach (Experience experience in Model.Personal.Experiences)
+            {
+                <div class="row">
+                    <div class="col-12">
+                        <div class="blog-details">
+                            <article class="blog-item">
+                                <div class="blog-item-body">
+                                    <h3 class="blog-item-title experience-item-title">
+                                        @if (experience.CompanyUrl != "")
+                                        {
+                                            <a href="@experience.CompanyUrl"><span>@experience.CompanyName</span></a>
 
+                                        }
+                                        else
+                                        {
+                                            <span>@experience.CompanyName</span>
+
+                                        }
+                                    </h3>
+                                    <h5 class="portfolio-title">@experience.Position</h5>
+                                    <h6>@experience.StartDate - @experience.EndDate</h6>
+                                    <h6>@experience.Location</h6>
+
+                                    <div class="about-content experience-content">
+                                        <ul>
+                                            @foreach (string paragraph in experience.Body)
+                                            {
+                                                <li>@paragraph</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
     </div>
+
     <!--// About Us Area -->
     <!-- Counter Section -->
     <div class="cr-section counter-section section-padding-xs bg-grey">

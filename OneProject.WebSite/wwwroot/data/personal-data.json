@@ -1,6 +1,6 @@
 {
     "id": 0,
-    "name": "peigeng jiang",
+    "name": "peigeng jiang (Andy)",
     "email": "jiangpeigeng@gmail.com",
     "phone": "+61 499 482 349",
     "city": "Canberra, Australia",
@@ -36,7 +36,7 @@
             "position": "Developer - Part-time",
             "start-date": "SEP 2020",
             "end-date": "NOV 2020",
-            "location": "Melbourne",
+            "location": "490 Warrandyte Rd, Langwarrin South VIC 3911",
             "body": [
                 "Improved process in getting customer data by using queries on Excel to retrieve data from Microsoft cloud database",
                 "Improved precision in selecting desirable data by filtering and integrating data using SQL query string on Excel",
@@ -52,7 +52,7 @@
             "position": "Developer Intern",
             "start-date": "JUN 2020",
             "end-date": "AUG 2020",
-            "location": "Melbourne",
+            "location": "490 Warrandyte Rd, Langwarrin South VIC 3911",
             "body": [
                 "Increased visibility for the stock purchase team to compare history product purchase price by calculating and highlighting differences using Python and present in Excel",
                 "Increased online store conversion rate by 40% by reducing website loading time",
@@ -66,9 +66,9 @@
             "position": "Full-stack Developer Intern",
             "start-date": "OCT 2019",
             "end-date": "DEC 2019",
-            "location": "Melbourne",
+            "location": "Melbourne, Australia",
             "body": [
-                "Improved application’s performance in creating new items by 90% by removing unused React components from re-rendering",
+                "Improved application's performance in creating new items by 90% by removing unused React components from re-rendering",
                 "Developed functionality for users to check their sales history in daily, weekly, monthly, and yearly format by creating sales history interval to retrieve integrated and filtered data",
                 "Published and hosted single page website by using AWS S3 bucket",
                 "Developed dynamic contact form for the static website by using AWS API Gateway, AWS SES and Node JS to develop AWS Lambda function",
@@ -83,7 +83,7 @@
             "position": "Graphic Designer - Causel",
             "start-date": "DEC 2018",
             "end-date": "OCT 2019",
-            "location": "Melbourne",
+            "location": "294 Park St, South Melbourne, VIC 3205",
             "body": [
                 "Increased the visual appearance of existing website by redesigning the website to align with design trend",
                 "Designed digital and physical contents for display and presentation purpose by using Adobe Photoshop and InDesign",
@@ -96,7 +96,7 @@
             "position": "Graphic Designer - Causel",
             "start-date": "APR 2017",
             "end-date": "OCT 2019",
-            "location": "Melbourne",
+            "location": "205 Victoria Parade, Collingwood VIC 3066",
             "body": [
                 "Managed company website contents and social media contents by using WordPress and social media platform",
                 "Designed posters, printouts and brochures for presentation and advertising purpose by using Adobe InDesign and Photoshop",
@@ -110,7 +110,7 @@
             "position": "Graphic Designer Intern",
             "start-date": "JAN 2017",
             "end-date": "MAR 2017",
-            "location": "Melbourne",
+            "location": "205 Victoria Parade, Collingwood VIC 3066",
             "body": []
         },
         {
@@ -119,7 +119,7 @@
             "position": "Graphic Designer Intern",
             "start-date": "JUN 2016",
             "end-date": "SEP 2016",
-            "location": "Melbourne",
+            "location": "Melbourne, Australia",
             "body": [
                 "Created visual identity design by using Adobe InDesign, Photoshop and Illustrator",
                 "Designed advertising poster, print out, media content and brochure by using Adobe Photoshop and InDesign",

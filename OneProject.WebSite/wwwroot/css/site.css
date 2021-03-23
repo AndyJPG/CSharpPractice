@@ -69,3 +69,11 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/* About me styles
+-------------------------------------------------- */
+/* Experience item title */
+.experience-item-title {
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 7px;
+}
