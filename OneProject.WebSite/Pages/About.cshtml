@@ -14,7 +14,7 @@
 <div class="breadcrumb-area bg-grey">
     <div class="container">
         <div class="cr-breadcrumb">
-            <h2>@ViewData["Title"]</h2>
+            <h2>@ViewData["Title"].ToString().ToUpper()</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li>@ViewData["Title"]</li>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <h2>MY NAME IS <strong>@Model.Personal.Name</strong></h2>
+                        <h2>MY NAME IS <strong>@Model.Personal.Name.ToUpper()</strong></h2>
                         @foreach (AboutMe text in Model.Personal.AboutMes)
                         {
                             <h5>@text.Subtitle</h5>
