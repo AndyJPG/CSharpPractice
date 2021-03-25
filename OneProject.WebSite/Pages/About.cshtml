@@ -197,4 +197,47 @@
         </div>
     </div>
     <!-- // Professional Skills -->
+
+    <!-- // About Me Area -->
+    <!-- Education Section -->
+    <!-- Education Area -->
+    <div class="cr-section blog-area section-padding-lg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>EDUCATION</h2>
+                    </div>
+                </div>
+            </div>
+            @foreach (Education education in Model.Personal.Educations)
+            {
+                <div class="row">
+                    <div class="col-12">
+                        <div class="blog-details">
+                            <article class="blog-item">
+                                <div class="blog-item-body">
+                                    <h3 class="blog-item-title experience-item-title">
+                                        <span>@education.SchoolName</span>
+                                    </h3>
+                                    <h5 class="portfolio-title">@education.SchoolMajor</h5>
+                                    <h6>@education.StartDate - @education.EndDate</h6>
+                                    <h6>@education.Location</h6>
+
+                                    <div class="about-content experience-content">
+                                        <ul>
+                                            @foreach (string paragraph in education.Body)
+                                            {
+                                                <li>@paragraph</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
 </main>
