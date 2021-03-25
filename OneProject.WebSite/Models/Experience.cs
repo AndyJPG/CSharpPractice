@@ -11,6 +11,8 @@ namespace OneProject.WebSite.Models
     {
         [JsonPropertyName("company-name")]
         public string CompanyName { get; set; }
+        [JsonPropertyName("company-logo")]
+        public string CompanyLogo { get; set; }
         [JsonPropertyName("company-url")]
         public string CompanyUrl { get; set; }
         public string Position { get; set; }

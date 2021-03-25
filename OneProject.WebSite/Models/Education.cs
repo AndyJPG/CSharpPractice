@@ -9,6 +9,9 @@ namespace OneProject.WebSite.Models
 {
     public class Education
     {
+        [JsonPropertyName("school-logo")]
+        public string SchoolLogo { get; set; }
+
         [JsonPropertyName("school-name")]
         public string SchoolName { get; set; }
 

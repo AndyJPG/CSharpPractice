@@ -72,8 +72,31 @@ body {
 
 /* About me styles
 -------------------------------------------------- */
+/* Experience section */
 /* Experience item title */
 .experience-item-title {
     border-bottom: 1px solid #d5d5d5;
     padding-bottom: 7px;
+}
+
+/* Company logo style */
+.experience-company-logo {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.experience-company-logo img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/* Eduction section */
+/* School logo style */
+.school-logo {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.school-logo img {
+    max-height: 100px;
 }

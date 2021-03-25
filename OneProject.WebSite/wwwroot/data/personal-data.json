@@ -31,6 +31,7 @@
     ],
     "experiences": [
         {
+            "company-logo": "https://media-exp1.licdn.com/dms/image/C510BAQEFl6M0xMzm5w/company-logo_200_200/0/1522030134578?e=1624492800&v=beta&t=kDOHCIItLbIXLvcnPmE2bTMxoVQQW3Ep03ZTKlyRApA",
             "company-name": "B&E Foods",
             "company-url": "https://www.linkedin.com/company/befoods/",
             "position": "Developer - Part-time",
@@ -47,6 +48,7 @@
             ]
         },
         {
+            "company-logo": "https://media-exp1.licdn.com/dms/image/C510BAQEFl6M0xMzm5w/company-logo_200_200/0/1522030134578?e=1624492800&v=beta&t=kDOHCIItLbIXLvcnPmE2bTMxoVQQW3Ep03ZTKlyRApA",
             "company-name": "B&E Foods",
             "company-url": "https://www.linkedin.com/company/befoods/",
             "position": "Developer Intern",
@@ -78,6 +80,7 @@
             ]
         },
         {
+            "company-logo": "https://www.melmel.com.au/be/wp-content/uploads/2019/02/duuet-logo-93.png",
             "company-name": "Duuet",
             "company-url": "https://www.duuet.com.au/",
             "position": "Graphic Designer - Causel",
@@ -91,6 +94,7 @@
             ]
         },
         {
+            "company-logo": "https://www.t-oneimage.com.au/wp-content/uploads/2019/12/T-ONE-LOGO.png",
             "company-name": "T-ONE IMAGE",
             "company-url": "https://www.t-oneimage.com.au/",
             "position": "Graphic Designer - Causel",
@@ -105,6 +109,7 @@
             ]
         },
         {
+            "company-logo": "https://www.t-oneimage.com.au/wp-content/uploads/2019/12/T-ONE-LOGO.png",
             "company-name": "T-ONE IMAGE",
             "company-url": "https://www.t-oneimage.com.au/",
             "position": "Graphic Designer Intern",
@@ -210,6 +215,7 @@
     ],
     "educations": [
         {
+            "school-logo": "https://media-exp1.licdn.com/dms/image/C510BAQExfSFBDePstQ/company-logo_200_200/0/1519912195637?e=1624492800&v=beta&t=yWqd26D0RwZA43qbUKh3Fl1ve9qhABpHp8BGYXUr900",
             "school-name": "Monash University",
             "school-major": "Master of Information Technology",
             "start-date": "JUL 2017",
@@ -221,6 +227,7 @@
             ]
         },
         {
+            "school-logo": "https://media-exp1.licdn.com/dms/image/C510BAQF6gLLzLAOGoA/company-logo_200_200/0/1519856453456?e=1624492800&v=beta&t=15eZ4Coeip-HHmv8woxusz2rU2GIAaagcGia-OXGSPg",
             "school-name": "Deakin University",
             "school-major": "Bachelor of Design",
             "start-date": "JUL 2016",
@@ -233,6 +240,7 @@
             ]
         },
         {
+            "school-logo": "https://media-exp1.licdn.com/dms/image/C560BAQHtRwb7DsD7EA/company-logo_200_200/0/1535346991462?e=1624492800&v=beta&t=X6ZgT1Kd6gUk4slU1QOiMQO6RtnCxMWZXNwBnAizPO4",
             "school-name": "Holmesglen Institute Tafe",
             "school-major": "Diploma of Graphic Design & Advance Diploma of Graphic Design",
             "start-date": "JAN 2014",

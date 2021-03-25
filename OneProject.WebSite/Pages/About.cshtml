@@ -76,7 +76,20 @@
             @foreach (Experience experience in Model.Personal.Experiences)
             {
                 <div class="row">
-                    <div class="col-12">
+                    @if (experience.CompanyLogo != null & experience.CompanyLogo != "")
+                    {
+                        <div class="col-md-2 portfolio-details-images experience-company-logo">
+                            <img src="@experience.CompanyLogo" alt="@experience.CompanyName logo">
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-2 d-flex justify-content-center experience-company-logo">
+                            <i class="far fa-building fa-4x"></i>
+                        </div>
+                    }
+
+                    <div class="col-md-10">
                         <div class="blog-details">
                             <article class="blog-item">
                                 <div class="blog-item-body">
@@ -197,7 +210,6 @@
         </div>
     </div>
     <!-- // Professional Skills -->
-
     <!-- // About Me Area -->
     <!-- Education Section -->
     <!-- Education Area -->
@@ -213,7 +225,19 @@
             @foreach (Education education in Model.Personal.Educations)
             {
                 <div class="row">
-                    <div class="col-12">
+                    @if (education.SchoolLogo != null & education.SchoolLogo != "")
+                    {
+                        <div class="col-md-2 portfolio-details-images school-logo">
+                            <img src="@education.SchoolLogo" alt="@education.SchoolName logo">
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-2 d-flex justify-content-center school-logo">
+                            <i class="far fa-building fa-4x"></i>
+                        </div>
+                    }
+                    <div class="col-md-10">
                         <div class="blog-details">
                             <article class="blog-item">
                                 <div class="blog-item-body">
