@@ -51,7 +51,7 @@
                                 Follow Me:
                                 @foreach (SocialMedia socialMedia in Model.Personal.SocialMedias)
                                 {
-                                    <a href="@socialMedia.URL"><i class="fa fa-@socialMedia.Name fa-lg"></i></a>
+                                    <a href="@socialMedia.URL"><i class="fa fa-@socialMedia.Name fa-lg social-media-icon"></i></a>
                                 }
                             </li>
 
@@ -79,7 +79,9 @@
                     @if (experience.CompanyLogo != null & experience.CompanyLogo != "")
                     {
                         <div class="col-md-2 portfolio-details-images experience-company-logo">
-                            <img src="@experience.CompanyLogo" alt="@experience.CompanyName logo">
+                            <a target="_blank" href="@experience.CompanyUrl">
+                                <img src="@experience.CompanyLogo" alt="@experience.CompanyName logo">
+                            </a>
                         </div>
                     }
                     else
@@ -96,7 +98,7 @@
                                     <h3 class="blog-item-title experience-item-title">
                                         @if (experience.CompanyUrl != "")
                                         {
-                                            <a href="@experience.CompanyUrl"><span>@experience.CompanyName</span></a>
+                                            <a target="_blank" href="@experience.CompanyUrl"><span>@experience.CompanyName</span></a>
 
                                         }
                                         else
@@ -154,7 +156,7 @@
                                     </h3>
                                     @if (projectExperience.ProjectUrl != "")
                                     {
-                                        <h5 class="portfolio-title">Link: <a href="@projectExperience.ProjectUrl">@projectExperience.ProjectUrl</a></h5>
+                                        <span>Link: <a target="_blank" href="@projectExperience.ProjectUrl">@projectExperience.ProjectUrl</a></span>
 
                                     }
                                     <h6>@projectExperience.StartDate - @projectExperience.EndDate</h6>

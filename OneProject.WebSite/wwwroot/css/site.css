@@ -70,8 +70,29 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+/* Link style */
+a:link {
+    color: #333333;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #333333;
+}
+
 /* About me styles
 -------------------------------------------------- */
+/* About Me Section */
+/* Follow Me Icon*/
+.social-media-icon {
+    color: #333333;
+    padding-left: 10px;
+}
+
+.social-media-icon:hover {
+    color: #333333;
+}
+
 /* Experience section */
 /* Experience item title */
 .experience-item-title {
