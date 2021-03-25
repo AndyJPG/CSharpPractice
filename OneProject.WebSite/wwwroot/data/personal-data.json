@@ -180,10 +180,10 @@
             ]
         },
         {
-            "category": "Research",
+            "category": "Prototyping",
             "skills": [
-                "Data analysis",
-                "Design trends analysis"
+                "Web prototyping using Adobe XD",
+                "Ineractive demo with HTML / CSS"
             ]
         },
         {
@@ -205,13 +205,6 @@
                 "Time management",
                 "Teamwork",
                 "Problem-solving"
-            ]
-        },
-        {
-            "category": "Prototyping",
-            "skills": [
-                "Web prototyping using Adobe XD",
-                "Ineractive demo with HTML / CSS"
             ]
         }
     ],

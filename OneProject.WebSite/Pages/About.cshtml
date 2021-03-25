@@ -164,6 +164,37 @@
         </div>
     </div>
 
-    
+    <!-- // About Me Area -->
+    <!-- Professional Skills -->
+    <div class="cr-section services-area section-padding-bottom-lg bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>PROFESSIONAL SKILLS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (ProfessionalSkill professionalSkill in Model.Personal.ProfessionalSkills)
+                {
+                    <!-- Single Service -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="service text-center">
+                            <h5>@professionalSkill.Category</h5>
+                            <p>
+                                @foreach (string skill in professionalSkill.Skills)
+                                {
+                                    @(skill + ", ")
+                                }
+                            </p>
 
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+    <!-- // Professional Skills -->
 </main>
