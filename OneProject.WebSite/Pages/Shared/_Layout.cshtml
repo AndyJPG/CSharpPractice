@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OneProject.WebSite</title>
+
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/83a4dd657a.js" crossorigin="anonymous"></script>
+
+    <!-- Google font (font-family: 'Dosis', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/css/theme/plugins/plugins.css" />
+    <link rel="stylesheet" href="~/css/theme/style.css" />
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!--
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">OneProject.WebSite</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        -->
+    <!-- Header -->
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="header-inner d-none d-lg-flex">
+                <div class="header-logo">
+                    <a asp-area="" asp-page="/Index">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.18 42.44">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #231f20;
+                                    }
+                                </style>
+                            </defs>
+                            <title>Asset 1</title>
+                            <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M2.71,42.44a2.57,2.57,0,0,1-1.93-.81A2.58,2.58,0,0,1,0,39.79a2.62,2.62,0,0,1,.78-1.93,2.62,2.62,0,0,1,1.93-.78,2.48,2.48,0,0,1,1.81.78,2.62,2.62,0,0,1,.78,1.93,2.58,2.58,0,0,1-.78,1.84A2.44,2.44,0,0,1,2.71,42.44Z" /><path class="cls-1" d="M20.9,42.44a14.55,14.55,0,0,1-6.39-1.3,10,10,0,0,1-4.2-3.6,9.37,9.37,0,0,1-1.5-5.24,1.94,1.94,0,0,1,.49-1.55,2.15,2.15,0,0,1,1.41-.4,2.54,2.54,0,0,1,1.29.34,1.22,1.22,0,0,1,.61,1.15,7.46,7.46,0,0,0,1,3.75,6.32,6.32,0,0,0,2.82,2.47,10,10,0,0,0,4.32.87,8.12,8.12,0,0,0,6-2.16Q29,34.61,29,30.12V3.51H20.84a1.16,1.16,0,0,1-1-.54,2.16,2.16,0,0,1-.38-1.24A2.32,2.32,0,0,1,19.78.55,1.11,1.11,0,0,1,20.84,0H31a2.13,2.13,0,0,1,1.18.37,1.29,1.29,0,0,1,.54,1.13V30.12a14.12,14.12,0,0,1-1.58,7.19,9.36,9.36,0,0,1-4.26,3.92A14.58,14.58,0,0,1,20.9,42.44Z" /><path class="cls-1" d="M43.19,42.09a2.38,2.38,0,0,1-1.33-.37,1.26,1.26,0,0,1-.57-1.12V1.44a1.29,1.29,0,0,1,.43-1A1.86,1.86,0,0,1,42.9,0H53.49a14.63,14.63,0,0,1,6,1.21A9.2,9.2,0,0,1,63.8,5.1a14,14,0,0,1,1.55,7.11v.57A14.13,14.13,0,0,1,63.77,20a9.3,9.3,0,0,1-4.32,3.92,15,15,0,0,1-6.07,1.21H45.09V40.6a1.25,1.25,0,0,1-.61,1.12A2.39,2.39,0,0,1,43.19,42.09Zm1.9-20.32h8.29a8.1,8.1,0,0,0,6-2.16q2.16-2.16,2.16-6.65v-.64q0-4.49-2.16-6.65a8.1,8.1,0,0,0-6-2.16H45.09Z" /><path class="cls-1" d="M83.15,42.44a14.75,14.75,0,0,1-6.05-1.21,9.49,9.49,0,0,1-4.32-3.92,14,14,0,0,1-1.61-7.19V12.32a14.07,14.07,0,0,1,1.61-7.2,9.56,9.56,0,0,1,4.29-3.91,16,16,0,0,1,12.41.09,10.13,10.13,0,0,1,4.2,3.54A9.08,9.08,0,0,1,95.18,10a1.81,1.81,0,0,1-.52,1.47,2.05,2.05,0,0,1-1.38.43,2.46,2.46,0,0,1-1.35-.35,1.32,1.32,0,0,1-.61-1.09,8.44,8.44,0,0,0-1.21-3.74,6.34,6.34,0,0,0-2.7-2.39,9.68,9.68,0,0,0-4.26-.84,8,8,0,0,0-6,2.16Q75,7.83,75,12.32v17.8q0,4.48,2.13,6.65a8,8,0,0,0,6,2.16,8.12,8.12,0,0,0,6-2.16q2.16-2.16,2.16-6.65V23.26H83.66a1.24,1.24,0,0,1-1.06-.49,1.78,1.78,0,0,1-.37-1.12,1.9,1.9,0,0,1,.37-1.15A1.22,1.22,0,0,1,83.66,20H93.74a1.3,1.3,0,0,1,1.07.46,1.68,1.68,0,0,1,.37,1.1v8.58a14,14,0,0,1-1.61,7.19,9.49,9.49,0,0,1-4.32,3.92A14.89,14.89,0,0,1,83.15,42.44Z" /></g></g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header-navigation">
+                    <button class="header-navigation-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="main-navigation">
+                        <ul>
+                            <li><a asp-area="" asp-page="/Index">HOME</a></li>
+                            <li><a asp-area="" asp-page="/About">ABOUT ME</a></li>
+                            <li><a asp-area="" asp-page="/Privacy">PRIVACY</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu-wrapper d-block d-lg-none">
+                <div class="mobile-menu clearfix">
+                    <a asp-area="" asp-page="/Index" class="mobile-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.18 42.44">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #231f20;
+                                    }
+                                </style>
+                            </defs>
+                            <title>Asset 1</title>
+                            <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M2.71,42.44a2.57,2.57,0,0,1-1.93-.81A2.58,2.58,0,0,1,0,39.79a2.62,2.62,0,0,1,.78-1.93,2.62,2.62,0,0,1,1.93-.78,2.48,2.48,0,0,1,1.81.78,2.62,2.62,0,0,1,.78,1.93,2.58,2.58,0,0,1-.78,1.84A2.44,2.44,0,0,1,2.71,42.44Z" /><path class="cls-1" d="M20.9,42.44a14.55,14.55,0,0,1-6.39-1.3,10,10,0,0,1-4.2-3.6,9.37,9.37,0,0,1-1.5-5.24,1.94,1.94,0,0,1,.49-1.55,2.15,2.15,0,0,1,1.41-.4,2.54,2.54,0,0,1,1.29.34,1.22,1.22,0,0,1,.61,1.15,7.46,7.46,0,0,0,1,3.75,6.32,6.32,0,0,0,2.82,2.47,10,10,0,0,0,4.32.87,8.12,8.12,0,0,0,6-2.16Q29,34.61,29,30.12V3.51H20.84a1.16,1.16,0,0,1-1-.54,2.16,2.16,0,0,1-.38-1.24A2.32,2.32,0,0,1,19.78.55,1.11,1.11,0,0,1,20.84,0H31a2.13,2.13,0,0,1,1.18.37,1.29,1.29,0,0,1,.54,1.13V30.12a14.12,14.12,0,0,1-1.58,7.19,9.36,9.36,0,0,1-4.26,3.92A14.58,14.58,0,0,1,20.9,42.44Z" /><path class="cls-1" d="M43.19,42.09a2.38,2.38,0,0,1-1.33-.37,1.26,1.26,0,0,1-.57-1.12V1.44a1.29,1.29,0,0,1,.43-1A1.86,1.86,0,0,1,42.9,0H53.49a14.63,14.63,0,0,1,6,1.21A9.2,9.2,0,0,1,63.8,5.1a14,14,0,0,1,1.55,7.11v.57A14.13,14.13,0,0,1,63.77,20a9.3,9.3,0,0,1-4.32,3.92,15,15,0,0,1-6.07,1.21H45.09V40.6a1.25,1.25,0,0,1-.61,1.12A2.39,2.39,0,0,1,43.19,42.09Zm1.9-20.32h8.29a8.1,8.1,0,0,0,6-2.16q2.16-2.16,2.16-6.65v-.64q0-4.49-2.16-6.65a8.1,8.1,0,0,0-6-2.16H45.09Z" /><path class="cls-1" d="M83.15,42.44a14.75,14.75,0,0,1-6.05-1.21,9.49,9.49,0,0,1-4.32-3.92,14,14,0,0,1-1.61-7.19V12.32a14.07,14.07,0,0,1,1.61-7.2,9.56,9.56,0,0,1,4.29-3.91,16,16,0,0,1,12.41.09,10.13,10.13,0,0,1,4.2,3.54A9.08,9.08,0,0,1,95.18,10a1.81,1.81,0,0,1-.52,1.47,2.05,2.05,0,0,1-1.38.43,2.46,2.46,0,0,1-1.35-.35,1.32,1.32,0,0,1-.61-1.09,8.44,8.44,0,0,0-1.21-3.74,6.34,6.34,0,0,0-2.7-2.39,9.68,9.68,0,0,0-4.26-.84,8,8,0,0,0-6,2.16Q75,7.83,75,12.32v17.8q0,4.48,2.13,6.65a8,8,0,0,0,6,2.16,8.12,8.12,0,0,0,6-2.16q2.16-2.16,2.16-6.65V23.26H83.66a1.24,1.24,0,0,1-1.06-.49,1.78,1.78,0,0,1-.37-1.12,1.9,1.9,0,0,1,.37-1.15A1.22,1.22,0,0,1,83.66,20H93.74a1.3,1.3,0,0,1,1.07.46,1.68,1.68,0,0,1,.37,1.1v8.58a14,14,0,0,1-1.61,7.19,9.49,9.49,0,0,1-4.32,3.92A14.89,14.89,0,0,1,83.15,42.44Z" /></g></g>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--// Header -->
+
+    <div id="wrapper" class="wrapper">
+        @RenderBody()
+    </div>
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - OneProject.WebSite - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Theme script -->
+    <script src="~/js/theme/js/plugins.js"></script>
+    <script src="~/js/theme/js/main.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

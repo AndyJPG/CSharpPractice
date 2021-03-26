@@ -1,0 +1,269 @@
+﻿@page
+@model OneProject.WebSite.Pages.AboutModel
+@using OneProject.WebSite.Models
+@{
+    ViewData["Title"] = "About Me";
+}
+
+<!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<!-- Add your site or application content here -->
+<!-- Wrapper -->
+<!-- Breadcrumb Area -->
+<div class="breadcrumb-area bg-grey">
+    <div class="container">
+        <div class="cr-breadcrumb">
+            <h2>@ViewData["Title"].ToString().ToUpper()</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>@ViewData["Title"]</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--// Breadcrumb Area -->
+<!-- Page Conttent -->
+<main class="page-content">
+
+    <!-- About Me Area -->
+    <div class="cr-section about-us-area section-padding-lg bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src='@Model.Personal.AvatarUrl' alt="about image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>MY NAME IS <strong>@Model.Personal.Name.ToUpper()</strong></h2>
+                        @foreach (AboutMe text in Model.Personal.AboutMes)
+                        {
+                            <h5>@text.Subtitle</h5>
+                            <p>@text.Body</p>
+                        }
+                        <ul>
+                            <li>Email: @Model.Personal.Email</li>
+                            <li>Phone: @Model.Personal.Phone</li>
+                            <li>City: @Model.Personal.City</li>
+                            <li>
+                                Follow Me:
+                                @foreach (SocialMedia socialMedia in Model.Personal.SocialMedias)
+                                {
+                                    <a href="@socialMedia.URL"><i class="fa fa-@socialMedia.Name fa-lg social-media-icon"></i></a>
+                                }
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // About Me Area -->
+    <!-- Experience Section -->
+    <!-- Experience Details Area -->
+    <div class="cr-section blog-area section-padding-lg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>EXPERIENCE</h2>
+                    </div>
+                </div>
+            </div>
+            @foreach (Experience experience in Model.Personal.Experiences)
+            {
+                <div class="row">
+                    @if (experience.CompanyLogo != null & experience.CompanyLogo != "")
+                    {
+                        <div class="col-md-2 portfolio-details-images experience-company-logo">
+                            <a target="_blank" href="@experience.CompanyUrl">
+                                <img src="@experience.CompanyLogo" alt="@experience.CompanyName logo">
+                            </a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-2 d-flex justify-content-center experience-company-logo">
+                            <i class="far fa-building fa-4x"></i>
+                        </div>
+                    }
+
+                    <div class="col-md-10">
+                        <div class="blog-details">
+                            <article class="blog-item">
+                                <div class="blog-item-body">
+                                    <h3 class="blog-item-title experience-item-title">
+                                        @if (experience.CompanyUrl != "")
+                                        {
+                                            <a target="_blank" href="@experience.CompanyUrl"><span>@experience.CompanyName</span></a>
+
+                                        }
+                                        else
+                                        {
+                                            <span>@experience.CompanyName</span>
+
+                                        }
+                                    </h3>
+                                    <h5 class="portfolio-title">@experience.Position</h5>
+                                    <h6>@experience.StartDate - @experience.EndDate</h6>
+                                    <h6>@experience.Location</h6>
+
+                                    @if (experience.Body.Any())
+                                    {
+                                        <div class="about-content experience-content">
+                                            <ul>
+                                                @foreach (string paragraph in experience.Body)
+                                                {
+                                                    <li>@paragraph</li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    }
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- // About Me Area -->
+    <!-- Project Experience Section -->
+    <!-- Project Experience Details Area -->
+    <div class="cr-section blog-area section-padding-lg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>PROJECT EXPERIENCE</h2>
+                    </div>
+                </div>
+            </div>
+            @foreach (ProjectExperience projectExperience in Model.Personal.ProjectExperiences)
+            {
+                <div class="row">
+                    <div class="col-12">
+                        <div class="blog-details">
+                            <article class="blog-item">
+                                <div class="blog-item-body">
+                                    <h3 class="blog-item-title experience-item-title">
+                                        <span>@projectExperience.ProjectName</span>
+                                    </h3>
+                                    @if (projectExperience.ProjectUrl != "")
+                                    {
+                                        <span>Link: <a target="_blank" href="@projectExperience.ProjectUrl">@projectExperience.ProjectUrl</a></span>
+
+                                    }
+                                    <h6>@projectExperience.StartDate - @projectExperience.EndDate</h6>
+                                    <h6>@projectExperience.Location</h6>
+
+                                    <div class="about-content experience-content">
+                                        <ul>
+                                            @foreach (string paragraph in projectExperience.Body)
+                                            {
+                                                <li>@paragraph</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- // About Me Area -->
+    <!-- Professional Skills -->
+    <div class="cr-section services-area section-padding-bottom-lg bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>PROFESSIONAL SKILLS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (ProfessionalSkill professionalSkill in Model.Personal.ProfessionalSkills)
+                {
+                    <!-- Single Service -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="service text-center">
+                            <h5>@professionalSkill.Category</h5>
+                            <p>
+                                @foreach (string skill in professionalSkill.Skills)
+                                {
+                                    @(skill + ", ")
+                                }
+                            </p>
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+    <!-- // Professional Skills -->
+    <!-- // About Me Area -->
+    <!-- Education Section -->
+    <!-- Education Area -->
+    <div class="cr-section blog-area section-padding-lg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>EDUCATION</h2>
+                    </div>
+                </div>
+            </div>
+            @foreach (Education education in Model.Personal.Educations)
+            {
+                <div class="row">
+                    @if (education.SchoolLogo != null & education.SchoolLogo != "")
+                    {
+                        <div class="col-md-2 portfolio-details-images school-logo">
+                            <img src="@education.SchoolLogo" alt="@education.SchoolName logo">
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-2 d-flex justify-content-center school-logo">
+                            <i class="far fa-building fa-4x"></i>
+                        </div>
+                    }
+                    <div class="col-md-10">
+                        <div class="blog-details">
+                            <article class="blog-item">
+                                <div class="blog-item-body">
+                                    <h3 class="blog-item-title experience-item-title">
+                                        <span>@education.SchoolName</span>
+                                    </h3>
+                                    <h5 class="portfolio-title">@education.SchoolMajor</h5>
+                                    <h6>@education.StartDate - @education.EndDate</h6>
+                                    <h6>@education.Location</h6>
+
+                                    <div class="about-content experience-content">
+                                        <ul>
+                                            @foreach (string paragraph in education.Body)
+                                            {
+                                                <li>@paragraph</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</main>
