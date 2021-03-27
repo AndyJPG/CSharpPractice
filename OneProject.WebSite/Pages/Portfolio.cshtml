@@ -5,4 +5,48 @@
     ViewData["Title"] = "Portfolio";
 }
 
+<!-- Breadcrumb Area -->
 @(await Html.RenderComponentAsync<Breadcrumb>(RenderMode.ServerPrerendered, new { Title = ViewData["Title"] }));
+<!--// Breadcrumb Area -->
+<!-- Page Conttent -->
+<main class="page-content">
+
+    <!-- Portfolios Ara -->
+    <div class="cr-section portfolios-area section-padding-lg bg-white">
+        <div class="container">
+
+            <div class="portfolio-filters text-center">
+                <button data-filter="*" class="is-checked">ALL</button>
+                <button data-filter=".portfolio-filter-graphic">GRAPHIC</button>
+                <button data-filter=".portfolio-filter-photoshop">PHOTOSHOP</button>
+                <button data-filter=".portfolio-filter-design">DESIGN</button>
+            </div>
+
+            <div class="row portfolios-wrapper portfolios-zoom-button-holder">
+
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
+                    <div class="portfolio">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio/portfolio-image-1.jpg" alt="portfolio image">
+                        </div>
+                        <div class="portfolio-content">
+                            <a href="img/portfolio/lg-size/portfolio-image-lg-1.jpg" class="portfolio-zoom-button"></a>
+                            <h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
+                            <h6><a href="portfolio.html">PORTFOLIO</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <!--// Single Portfolio -->
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <a href="portfolio.html" class="button" data-content="View More">
+                        <span>View More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Portfolios Ara -->
+</main>

@@ -1,0 +1,99 @@
+{
+    "categories": [
+        "web design",
+        "branding",
+        "illustration",
+        "app"
+    ],
+    "portfolios": [
+        {
+            "name": "OhFarm",
+            "category": [ "app" ],
+            "image-url": "",
+            "author": "peigeng jiang",
+            "completed-date": "July 2019",
+            "skills": [
+                "Swift"
+            ],
+            "title": "OhFarm Application Project",
+            "sub-title": "An application that provides thorough information about kitchen farming",
+            "body": "This application is designed to provide information about kitchen farming. The application contains hundreds of plants that are suitable for growing inside household. Additionally, it provides tracking system to alart user when to water and harvest. For those people whom has limited space inside their household, this application also provide map with community garden around users.",
+            "project-url": "github.com/AndyJPG/OhFarmV2.0.git"
+        },
+        {
+            "name": "DUÜET Website",
+            "category": [ "web design" ],
+            "image-url": "",
+            "author": "peigeng jiang",
+            "completed-date": "25th September 2019",
+            "skills": [
+                "Illustrator",
+                "Photoshop"
+            ],
+            "title": "DUÜET Website Redesign",
+            "sub-title": "DUÜET website reflect on current design trend and align with it's company startegy",
+            "body": "DUÜET is a Melbourne based wedding photography and videography studio. This project redesigned company's website to align with current design trend and company's vision. By researching target audiences of the company and it's business strategy, we quickly settled design style, color secheme and layout. The new design result in 50% increase in vist rate the following month after publishing.",
+            "project-url": "https://www.behance.net/gallery/85943425/DUUEET-Website-Design"
+        },
+        {
+            "name": "Lighthaus Website",
+            "category": [ "web design" ],
+            "image-url": "",
+            "author": "peigeng jiang",
+            "completed-date": "16th March 2019",
+            "skills": [
+                "Illustrator",
+                "Photoshop"
+            ],
+            "title": "Lighthaus Website Design",
+            "sub-title": "Web visual design for Lighthaus wedding videography company",
+            "body": "Web visual design for Lighthaus wedding videography company",
+            "project-url": "https://www.behance.net/gallery/77611609/Lighthaus-Website-Visual"
+        },
+        {
+            "name": "FanFou Website",
+            "category": [ "web design" ],
+            "image-url": "",
+            "author": "peigeng jiang",
+            "completed-date": "17th February 2017",
+            "skills": [
+                "Illustrator",
+                "Photoshop"
+            ],
+            "title": "FanFou Website Design",
+            "sub-title": "Web design for Sichuan food restaurant",
+            "body": "Web design for Sichuan food restaurant. Using red color and pattern as the base of the design to represent hot and spicy flavor in Sichuan food. Bright color and traditional Chinese pattern have also been used as iconic Chinese design elements.",
+            "project-url": "https://www.behance.net/gallery/48969681/FanFou-Web-Design"
+        },
+        {
+            "name": "DesTech project",
+            "category": [
+                "web design",
+                "branding"
+            ],
+            "image-url": "",
+            "author": "peigeng jiang",
+            "completed-date": "13th January 2017",
+            "skills": [
+                "Illustrator",
+                "Photoshop"
+            ],
+            "title": "DesTech project",
+            "sub-title": "An Event Rebranding project with DesTech, International Conference on design & technology",
+            "body": "An Event Rebranding project with DesTech, International Conference on design & technology. This 6 month project established by four member team and assisted by DesTech designer.",
+            "project-url": "https://www.behance.net/gallery/47347901/DesTech-Event-Branding"
+        },
+        {
+            "name": "DUÜET Web",
+            "category": "app",
+            "image-url": "",
+            "author": "peigeng jiang",
+            "completed-date": "",
+            "skills": [],
+            "title": "",
+            "sub-title": "",
+            "body": "",
+            "project-url": ""
+        }
+    ]
+}
