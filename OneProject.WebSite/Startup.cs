@@ -35,7 +35,10 @@ namespace OneProject.WebSite
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddRazorPages();
+            // Add server side blazor to use razor component
             services.AddServerSideBlazor();
+            // Add controllers to use api
+            services.AddControllers();
             services.AddTransient<JsonFilePersonalDataService>();
         }
 
@@ -65,6 +68,8 @@ namespace OneProject.WebSite
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                // Add controllers at service and map with endpoints
+                endpoints.MapControllers();
             });
         }
     }
