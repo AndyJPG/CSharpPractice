@@ -13,23 +13,15 @@ namespace OneProject.WebSite.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public JsonFilePersonalDataService PersonalDataService;
-        public Personal Personal { get; private set; }
 
-        public IndexModel(ILogger<IndexModel> logger, 
-            JsonFilePersonalDataService jsonFilePersonalDataService)
+        public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
 
-            // Inject JsonFilePersonalDataService to Index model
-            PersonalDataService = jsonFilePersonalDataService;
         }
 
         public void OnGet()
         {
-            // Trigger service function on website get request
-            // Pass data to personal property for access in Model
-            Personal = PersonalDataService.GetPersonalData();
         }
     }
 }

@@ -1,4 +1,8 @@
 ﻿@page
 @model OneProject.WebSite.Pages.PortfolioModel
+@using OneProject.WebSite.Components
 @{
+    ViewData["Title"] = "Portfolio";
 }
+
+@(await Html.RenderComponentAsync<Breadcrumb>(RenderMode.ServerPrerendered, new { Title = ViewData["Title"] }));

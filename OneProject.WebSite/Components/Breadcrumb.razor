@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Components
+
+<div class="breadcrumb-area bg-grey">
+    <div class="container">
+        <div class="cr-breadcrumb">
+            <h2>@Title.ToUpper()</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>@Title</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; }
+}

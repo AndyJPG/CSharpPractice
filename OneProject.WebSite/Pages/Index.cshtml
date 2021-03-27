@@ -9,31 +9,3 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
-<p>
-    @Model.Personal.Id
-    @Model.Personal.Name
-</p>
-
-@foreach (string position in Model.Personal.Positions)
-{
-    <p>@position</p>
-}
-
-@foreach (SocialMedia socialMedia in Model.Personal.SocialMedias)
-{
-    <p>@socialMedia.Name @socialMedia.URL</p>
-}
-
-@foreach (AboutMe aboutMe in Model.Personal.AboutMes)
-{
-    <p>@aboutMe.Subtitle @aboutMe.Body</p>
-}
-
-<p>@Model.Personal.Experiences[0].CompanyName</p>
-
-<p>@Model.Personal.ProjectExperiences[0].ProjectName</p>
-
-<p>@Model.Personal.ProfessionalSkills[0].Category</p>
-
-<p>@Model.Personal.Educations[0].SchoolName</p>

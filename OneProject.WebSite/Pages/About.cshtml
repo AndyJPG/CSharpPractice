@@ -11,17 +11,7 @@
 <!-- Add your site or application content here -->
 <!-- Wrapper -->
 <!-- Breadcrumb Area -->
-<div class="breadcrumb-area bg-grey">
-    <div class="container">
-        <div class="cr-breadcrumb">
-            <h2>@ViewData["Title"].ToString().ToUpper()</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>@ViewData["Title"]</li>
-            </ul>
-        </div>
-    </div>
-</div>
+@(await Html.RenderComponentAsync<Breadcrumb>(RenderMode.ServerPrerendered, new { Title = ViewData["Title"] }));
 <!--// Breadcrumb Area -->
 <!-- Page Conttent -->
 <main class="page-content">
