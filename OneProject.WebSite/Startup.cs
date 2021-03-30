@@ -39,7 +39,10 @@ namespace OneProject.WebSite
             services.AddServerSideBlazor();
             // Add controllers to use api
             services.AddControllers();
+
+            // Register services
             services.AddTransient<JsonFilePersonalDataService>();
+            services.AddTransient<JsonFilePortfolioService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
