@@ -1,6 +1,7 @@
 ﻿@page
 @model OneProject.WebSite.Pages.PortfolioModel
 @using OneProject.WebSite.Components
+@using OneProject.WebSite.Models
 @{
     ViewData["Title"] = "Portfolio";
 }
@@ -25,18 +26,24 @@
             <div class="row portfolios-wrapper portfolios-zoom-button-holder">
 
                 <!-- Single Portfolio -->
-                <div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
-                    <div class="portfolio">
-                        <div class="portfolio-image">
-                            <img src="img/portfolio/portfolio-image-1.jpg" alt="portfolio image">
-                        </div>
-                        <div class="portfolio-content">
-                            <a href="img/portfolio/lg-size/portfolio-image-lg-1.jpg" class="portfolio-zoom-button"></a>
-                            <h5><a href="portfolio-details.html">AWESOME RACING CAR</a></h5>
-                            <h6><a href="portfolio.html">PORTFOLIO</a></h6>
+                @foreach (Portfolio portfolio in Model.Portfolios)
+                {
+                    <div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
+                        <div class="portfolio">
+                            <div class="portfolio-image">
+                                <img src="@portfolio.ImageUrl" alt="portfolio image">
+                            </div>
+                            <div class="portfolio-content">
+                                <a href="img/portfolio/lg-size/portfolio-image-lg-1.jpg" class="portfolio-zoom-button"></a>
+                                <h5><a href="portfolio-details.html">@portfolio.Name</a></h5>
+                                @foreach (string category in portfolio.Category)
+                                {
+                                    <h6><a href="portfolio.html">@category</a></h6>
+                                }
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
                 <!--// Single Portfolio -->
             </div>
             <div class="row">
