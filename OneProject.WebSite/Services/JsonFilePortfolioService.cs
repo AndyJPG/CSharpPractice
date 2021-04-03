@@ -30,15 +30,20 @@ namespace OneProject.WebSite.Services
         }
 
         // Service to retrieve data from json file
-        public List<Portfolio> GetPortfoliosBrief()
+        public PortfolioBrief GetPortfoliosBrief()
         {
             // IO operation gabage collection doesn't automaticly managed by C# so we use using keyword
             // It can be properly terminated without occupy the memory
             using (StreamReader jsonFileReader = File.OpenText(PortfolioJsonFileName))
             {
                 // Return deserialized personal object
-                JObject portfolioJson = JObject.Parse(jsonFileReader.ReadToEnd());
-                return portfolioJson["portfolios"].ToObject<List<Portfolio>>();
+                //JObject portfolioJson = JObject.Parse(jsonFileReader.ReadToEnd());
+                //return portfolioJson["portfolios"].ToObject<List<Portfolio>>();
+                return JsonSerializer.Deserialize<PortfolioBrief>(jsonFileReader.ReadToEnd(),
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
             }
         }
     }

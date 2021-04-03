@@ -1,7 +1,6 @@
 ﻿@page
 @model OneProject.WebSite.Pages.PortfolioModel
 @using OneProject.WebSite.Components
-@using OneProject.WebSite.Models
 @{
     ViewData["Title"] = "Portfolio";
 }
@@ -26,7 +25,7 @@
             <div class="row portfolios-wrapper portfolios-zoom-button-holder">
 
                 <!-- Single Portfolio -->
-                @foreach (Portfolio portfolio in Model.Portfolios)
+                @foreach (Models.Portfolio portfolio in Model.PortfolioBrief.Portfolios)
                 {
                     <div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
                         <div class="portfolio">
@@ -35,7 +34,7 @@
                             </div>
                             <div class="portfolio-content">
                                 <a href="@portfolio.ImageUrl" class="portfolio-zoom-button"></a>
-                                <h5><a asp-page="" asp-route-id="@portfolio.Id">@portfolio.Name</a></h5>
+                                <h5><a asp-page="PortfolioDetail/Index" asp-route-id="@portfolio.Id">@portfolio.Name</a></h5>
                                 @foreach (string category in portfolio.Category)
                                 {
                                     <h6><a href="portfolio.html">@category</a></h6>

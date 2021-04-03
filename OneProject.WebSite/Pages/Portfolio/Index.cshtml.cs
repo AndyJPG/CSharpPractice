@@ -17,11 +17,11 @@ namespace OneProject.WebSite.Pages
         }
 
         public JsonFilePortfolioService PortfolioService { get; set; }
-        public List<Portfolio> Portfolios { get; set; }
+        public PortfolioBrief PortfolioBrief { get; set; }
 
         public void OnGet()
         {
-            Portfolios = PortfolioService.GetPortfoliosBrief();
+            PortfolioBrief = PortfolioService.GetPortfoliosBrief();
         }
     }
 }

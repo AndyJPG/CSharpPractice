@@ -1,0 +1,9 @@
+﻿@page
+@model OneProject.WebSite.Pages.PortfolioDetail.IndexModel
+@using OneProject.WebSite.Components
+@{
+    ViewData["Title"] = "Title";
+}
+<!-- Breadcrumb Area -->
+@(await Html.RenderComponentAsync<Breadcrumb>(RenderMode.ServerPrerendered, new { Title = ViewData["Title"] }));
+<!--// Breadcrumb Area -->

@@ -23,7 +23,7 @@ namespace OneProject.WebSite.Controllers
         public JsonFilePortfolioService PortfolioService { get; }
 
         [HttpGet]
-        public List<Portfolio> Get()
+        public PortfolioBrief Get()
         {
             return PortfolioService.GetPortfoliosBrief();
         }
