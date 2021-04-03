@@ -17,9 +17,10 @@
 
             <div class="portfolio-filters text-center">
                 <button data-filter="*" class="is-checked">ALL</button>
-                <button data-filter=".portfolio-filter-graphic">GRAPHIC</button>
-                <button data-filter=".portfolio-filter-photoshop">PHOTOSHOP</button>
-                <button data-filter=".portfolio-filter-design">DESIGN</button>
+                @foreach (string category in Model.PortfolioBrief.Categories)
+                {
+                    <button data-filter="@(".portfolio-filter-" + category.Replace(" ", "-"))">@category.ToUpper()</button>
+                }
             </div>
 
             <div class="row portfolios-wrapper portfolios-zoom-button-holder">
@@ -27,7 +28,12 @@
                 <!-- Single Portfolio -->
                 @foreach (Models.Portfolio portfolio in Model.PortfolioBrief.Portfolios)
                 {
-                    <div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
+                    string filters = "";
+                    foreach (string category in portfolio.Category)
+                    {
+                        filters += "portfolio-filter-" + category.Replace(" ", "-") + " ";
+                    }
+                    <div class="col-lg-4 col-md-6 col-12 portfolio-item @filters">
                         <div class="portfolio">
                             <div class="portfolio-image">
                                 <img src="@portfolio.ImageUrl" alt="portfolio image">
