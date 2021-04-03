@@ -34,8 +34,8 @@
                                 <img src="@portfolio.ImageUrl" alt="portfolio image">
                             </div>
                             <div class="portfolio-content">
-                                <a href="img/portfolio/lg-size/portfolio-image-lg-1.jpg" class="portfolio-zoom-button"></a>
-                                <h5><a href="portfolio-details.html">@portfolio.Name</a></h5>
+                                <a href="@portfolio.ImageUrl" class="portfolio-zoom-button"></a>
+                                <h5><a asp-page="" asp-route-id="@portfolio.Id">@portfolio.Name</a></h5>
                                 @foreach (string category in portfolio.Category)
                                 {
                                     <h6><a href="portfolio.html">@category</a></h6>

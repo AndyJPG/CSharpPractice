@@ -1,0 +1,67 @@
+{
+    "categories": [
+        "web design",
+        "graphic design",
+        "branding",
+        "illustration",
+        "app"
+    ],
+    "portfolios": [
+        {
+            "id": "op-12",
+            "name": "OhFarm",
+            "category": [ "app" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "id": "op-11",
+            "name": "DUUET Website",
+            "category": [ "web design" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "id": "op-10",
+            "name": "Lighthaus Website",
+            "category": [ "web design" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "id": "op-9",
+            "name": "FanFou Website",
+            "category": [ "web design" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "id": "op-8",
+            "name": "DesTech project",
+            "category": [
+                "web design",
+                "branding"
+            ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "id": "op-7",
+            "name": "Backery project",
+            "category": [ "branding" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "id": "op-6",
+            "name": "Me book design",
+            "category": [ "graphic design" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "id": "op-5",
+            "name": "Cooking book",
+            "category": [ "graphic design" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        },
+        {
+            "name": "DUUET Web",
+            "category": [ "app" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
+        }
+    ]
+}

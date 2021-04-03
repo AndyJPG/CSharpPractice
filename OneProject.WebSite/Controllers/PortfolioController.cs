@@ -25,8 +25,7 @@ namespace OneProject.WebSite.Controllers
         [HttpGet]
         public List<Portfolio> Get()
         {
-            //return PortfolioService.GetPortfolios();
-            return PortfolioService.GetPortfolios();
+            return PortfolioService.GetPortfoliosBrief();
         }
     }
 }

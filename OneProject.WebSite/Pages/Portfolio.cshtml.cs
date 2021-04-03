@@ -21,7 +21,7 @@ namespace OneProject.WebSite.Pages
 
         public void OnGet()
         {
-            Portfolios = PortfolioService.GetPortfolios();
+            Portfolios = PortfolioService.GetPortfoliosBrief();
         }
     }
 }

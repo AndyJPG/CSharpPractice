@@ -25,12 +25,12 @@ namespace OneProject.WebSite.Services
             {
                 // Use webHostEnvironment service to get wwwrootpath
                 // Different host environment has different root path
-                return Path.Combine(WebHostEnvironment.WebRootPath, "data", "portfolio-data.json");
+                return Path.Combine(WebHostEnvironment.WebRootPath, "data", "portfolio-brief-data.json");
             }
         }
 
         // Service to retrieve data from json file
-        public List<Portfolio> GetPortfolios()
+        public List<Portfolio> GetPortfoliosBrief()
         {
             // IO operation gabage collection doesn't automaticly managed by C# so we use using keyword
             // It can be properly terminated without occupy the memory

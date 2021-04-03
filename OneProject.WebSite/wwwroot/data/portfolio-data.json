@@ -1,15 +1,17 @@
 {
     "categories": [
         "web design",
+        "graphic design",
         "branding",
         "illustration",
         "app"
     ],
     "portfolios": [
         {
+            "id": "op-12",
             "name": "OhFarm",
             "category": [ "app" ],
-            "image-url": "",
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
             "author": "peigeng jiang",
             "completed-date": "July 2019",
             "skills": [
@@ -21,9 +23,10 @@
             "project-url": "github.com/AndyJPG/OhFarmV2.0.git"
         },
         {
+            "id": "op-11",
             "name": "DUUET Website",
             "category": [ "web design" ],
-            "image-url": "",
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
             "author": "peigeng jiang",
             "completed-date": "25th September 2019",
             "skills": [
@@ -36,9 +39,10 @@
             "project-url": "https://www.behance.net/gallery/85943425/DUUEET-Website-Design"
         },
         {
+            "id": "op-10",
             "name": "Lighthaus Website",
             "category": [ "web design" ],
-            "image-url": "",
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
             "author": "peigeng jiang",
             "completed-date": "16th March 2019",
             "skills": [
@@ -51,9 +55,10 @@
             "project-url": "https://www.behance.net/gallery/77611609/Lighthaus-Website-Visual"
         },
         {
+            "id": "op-9",
             "name": "FanFou Website",
             "category": [ "web design" ],
-            "image-url": "",
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
             "author": "peigeng jiang",
             "completed-date": "17th February 2017",
             "skills": [
@@ -66,12 +71,13 @@
             "project-url": "https://www.behance.net/gallery/48969681/FanFou-Web-Design"
         },
         {
+            "id": "op-8",
             "name": "DesTech project",
             "category": [
                 "web design",
                 "branding"
             ],
-            "image-url": "",
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
             "author": "peigeng jiang",
             "completed-date": "13th January 2017",
             "skills": [
@@ -84,9 +90,61 @@
             "project-url": "https://www.behance.net/gallery/47347901/DesTech-Event-Branding"
         },
         {
+            "id": "op-7",
+            "name": "Backery project",
+            "category": [ "branding" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+            "author": "peigeng jiang",
+            "completed-date": "25th July 2016",
+            "skills": [
+                "Illustrator",
+                "Photoshop",
+                "Packaging",
+                "Printing"
+            ],
+            "title": "Backery project",
+            "subtitle": "An pincky backery project",
+            "body": "The project created a whole brand to backery store Pinky bakery. The design range from brand, cards, logo to packages and website. The design is focus on fitting the style of current backery store.",
+            "project-url": "https://www.behance.net/gallery/35356481/BACKERY-PROJECT"
+        },
+        {
+            "id": "op-6",
+            "name": "Me book design",
+            "category": [ "graphic design" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+            "author": "peigeng jiang",
+            "completed-date": "13rd July 2016",
+            "skills": [
+                "Illustrator",
+                "Photoshop",
+                "Printing"
+            ],
+            "title": "Me book design",
+            "subtitle": "A whole book design about self journey.",
+            "body": "A whole book design that tells about personal journey. The whole book page using paper cutting technique to present the shapes and ideas.",
+            "project-url": "https://www.behance.net/gallery/35328855/CLOSE-SHORT-OF-PROJECT-ME-BOOK"
+        },
+        {
+            "id": "op-5",
+            "name": "Cooking book",
+            "category": [ "graphic design" ],
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+            "author": "peigeng jiang",
+            "completed-date": "23rd March 2016",
+            "skills": [
+                "Photograph",
+                "Photoshop",
+                "Printing"
+            ],
+            "title": "Cooking book",
+            "subtitle": "Cover and layout design for cooking books",
+            "body": "The cooking book cover and inner pages design consisted using simple drawing and lines to convey the idea.",
+            "project-url": "https://www.behance.net/gallery/35321567/COOKING-BOOK"
+        },
+        {
             "name": "DUUET Web",
             "category": [ "app" ],
-            "image-url": "",
+            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
             "author": "peigeng jiang",
             "completed-date": "",
             "skills": [],
