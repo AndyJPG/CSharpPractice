@@ -1,157 +1,148 @@
-{
-    "categories": [
-        "web design",
-        "graphic design",
-        "branding",
-        "illustration",
-        "app"
+[
+  {
+    "id": "op-12",
+    "name": "OhFarm",
+    "category": [ "app" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "July 2019",
+    "skills": [
+      "Swift"
     ],
-    "portfolios": [
-        {
-            "id": "op-12",
-            "name": "OhFarm",
-            "category": [ "app" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "July 2019",
-            "skills": [
-                "Swift"
-            ],
-            "title": "OhFarm Application Project",
-            "subtitle": "An application that provides thorough information about kitchen farming",
-            "body": "This application is designed to provide information about kitchen farming. The application contains hundreds of plants that are suitable for growing inside household. Additionally, it provides tracking system to alart user when to water and harvest. For those people whom has limited space inside their household, this application also provide map with community garden around users.",
-            "project-url": "github.com/AndyJPG/OhFarmV2.0.git"
-        },
-        {
-            "id": "op-11",
-            "name": "DUUET Website",
-            "category": [ "web design" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "25th September 2019",
-            "skills": [
-                "Illustrator",
-                "Photoshop"
-            ],
-            "title": "DUUET Website Redesign",
-            "subtitle": "DUUET website reflect on current design trend and align with it's company startegy",
-            "body": "DUUET is a Melbourne based wedding photography and videography studio. This project redesigned company's website to align with current design trend and company's vision. By researching target audiences of the company and it's business strategy, we quickly settled design style, color secheme and layout. The new design result in 50% increase in vist rate the following month after publishing.",
-            "project-url": "https://www.behance.net/gallery/85943425/DUUEET-Website-Design"
-        },
-        {
-            "id": "op-10",
-            "name": "Lighthaus Website",
-            "category": [ "web design" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "16th March 2019",
-            "skills": [
-                "Illustrator",
-                "Photoshop"
-            ],
-            "title": "Lighthaus Website Design",
-            "subtitle": "Web visual design for Lighthaus wedding videography company",
-            "body": "Web visual design for Lighthaus wedding videography company",
-            "project-url": "https://www.behance.net/gallery/77611609/Lighthaus-Website-Visual"
-        },
-        {
-            "id": "op-9",
-            "name": "FanFou Website",
-            "category": [ "web design" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "17th February 2017",
-            "skills": [
-                "Illustrator",
-                "Photoshop"
-            ],
-            "title": "FanFou Website Design",
-            "subtitle": "Web design for Sichuan food restaurant",
-            "body": "Web design for Sichuan food restaurant. Using red color and pattern as the base of the design to represent hot and spicy flavor in Sichuan food. Bright color and traditional Chinese pattern have also been used as iconic Chinese design elements.",
-            "project-url": "https://www.behance.net/gallery/48969681/FanFou-Web-Design"
-        },
-        {
-            "id": "op-8",
-            "name": "DesTech project",
-            "category": [
-                "web design",
-                "branding"
-            ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "13th January 2017",
-            "skills": [
-                "Illustrator",
-                "Photoshop"
-            ],
-            "title": "DesTech project",
-            "subtitle": "An Event Rebranding project with DesTech, International Conference on design & technology",
-            "body": "An Event Rebranding project with DesTech, International Conference on design & technology. This 6 month project established by four member team and assisted by DesTech designer.",
-            "project-url": "https://www.behance.net/gallery/47347901/DesTech-Event-Branding"
-        },
-        {
-            "id": "op-7",
-            "name": "Backery project",
-            "category": [ "branding" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "25th July 2016",
-            "skills": [
-                "Illustrator",
-                "Photoshop",
-                "Packaging",
-                "Printing"
-            ],
-            "title": "Backery project",
-            "subtitle": "An pincky backery project",
-            "body": "The project created a whole brand to backery store Pinky bakery. The design range from brand, cards, logo to packages and website. The design is focus on fitting the style of current backery store.",
-            "project-url": "https://www.behance.net/gallery/35356481/BACKERY-PROJECT"
-        },
-        {
-            "id": "op-6",
-            "name": "Me book design",
-            "category": [ "graphic design" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "13rd July 2016",
-            "skills": [
-                "Illustrator",
-                "Photoshop",
-                "Printing"
-            ],
-            "title": "Me book design",
-            "subtitle": "A whole book design about self journey.",
-            "body": "A whole book design that tells about personal journey. The whole book page using paper cutting technique to present the shapes and ideas.",
-            "project-url": "https://www.behance.net/gallery/35328855/CLOSE-SHORT-OF-PROJECT-ME-BOOK"
-        },
-        {
-            "id": "op-5",
-            "name": "Cooking book",
-            "category": [ "graphic design" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "23rd March 2016",
-            "skills": [
-                "Photograph",
-                "Photoshop",
-                "Printing"
-            ],
-            "title": "Cooking book",
-            "subtitle": "Cover and layout design for cooking books",
-            "body": "The cooking book cover and inner pages design consisted using simple drawing and lines to convey the idea.",
-            "project-url": "https://www.behance.net/gallery/35321567/COOKING-BOOK"
-        },
-        {
-            "name": "DUUET Web",
-            "category": [ "app" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
-            "author": "peigeng jiang",
-            "completed-date": "",
-            "skills": [],
-            "title": "",
-            "subtitle": "",
-            "body": "",
-            "project-url": ""
-        }
-    ]
-}
+    "title": "OhFarm Application Project",
+    "subtitle": "An application that provides thorough information about kitchen farming",
+    "body": "This application is designed to provide information about kitchen farming. The application contains hundreds of plants that are suitable for growing inside household. Additionally, it provides tracking system to alart user when to water and harvest. For those people whom has limited space inside their household, this application also provide map with community garden around users.",
+    "project-url": "github.com/AndyJPG/OhFarmV2.0.git"
+  },
+  {
+    "id": "op-11",
+    "name": "DUUET Website",
+    "category": [ "web design" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "25th September 2019",
+    "skills": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "title": "DUUET Website Redesign",
+    "subtitle": "DUUET website reflect on current design trend and align with it's company startegy",
+    "body": "DUUET is a Melbourne based wedding photography and videography studio. This project redesigned company's website to align with current design trend and company's vision. By researching target audiences of the company and it's business strategy, we quickly settled design style, color secheme and layout. The new design result in 50% increase in vist rate the following month after publishing.",
+    "project-url": "https://www.behance.net/gallery/85943425/DUUEET-Website-Design"
+  },
+  {
+    "id": "op-10",
+    "name": "Lighthaus Website",
+    "category": [ "web design" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "16th March 2019",
+    "skills": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "title": "Lighthaus Website Design",
+    "subtitle": "Web visual design for Lighthaus wedding videography company",
+    "body": "Web visual design for Lighthaus wedding videography company",
+    "project-url": "https://www.behance.net/gallery/77611609/Lighthaus-Website-Visual"
+  },
+  {
+    "id": "op-9",
+    "name": "FanFou Website",
+    "category": [ "web design" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "17th February 2017",
+    "skills": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "title": "FanFou Website Design",
+    "subtitle": "Web design for Sichuan food restaurant",
+    "body": "Web design for Sichuan food restaurant. Using red color and pattern as the base of the design to represent hot and spicy flavor in Sichuan food. Bright color and traditional Chinese pattern have also been used as iconic Chinese design elements.",
+    "project-url": "https://www.behance.net/gallery/48969681/FanFou-Web-Design"
+  },
+  {
+    "id": "op-8",
+    "name": "DesTech project",
+    "category": [
+      "web design",
+      "branding"
+    ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "13th January 2017",
+    "skills": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "title": "DesTech project",
+    "subtitle": "An Event Rebranding project with DesTech, International Conference on design & technology",
+    "body": "An Event Rebranding project with DesTech, International Conference on design & technology. This 6 month project established by four member team and assisted by DesTech designer.",
+    "project-url": "https://www.behance.net/gallery/47347901/DesTech-Event-Branding"
+  },
+  {
+    "id": "op-7",
+    "name": "Backery project",
+    "category": [ "branding" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "25th July 2016",
+    "skills": [
+      "Illustrator",
+      "Photoshop",
+      "Packaging",
+      "Printing"
+    ],
+    "title": "Backery project",
+    "subtitle": "An pincky backery project",
+    "body": "The project created a whole brand to backery store Pinky bakery. The design range from brand, cards, logo to packages and website. The design is focus on fitting the style of current backery store.",
+    "project-url": "https://www.behance.net/gallery/35356481/BACKERY-PROJECT"
+  },
+  {
+    "id": "op-6",
+    "name": "Me book design",
+    "category": [ "graphic design" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "13rd July 2016",
+    "skills": [
+      "Illustrator",
+      "Photoshop",
+      "Printing"
+    ],
+    "title": "Me book design",
+    "subtitle": "A whole book design about self journey.",
+    "body": "A whole book design that tells about personal journey. The whole book page using paper cutting technique to present the shapes and ideas.",
+    "project-url": "https://www.behance.net/gallery/35328855/CLOSE-SHORT-OF-PROJECT-ME-BOOK"
+  },
+  {
+    "id": "op-5",
+    "name": "Cooking book",
+    "category": [ "graphic design" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "23rd March 2016",
+    "skills": [
+      "Photograph",
+      "Photoshop",
+      "Printing"
+    ],
+    "title": "Cooking book",
+    "subtitle": "Cover and layout design for cooking books",
+    "body": "The cooking book cover and inner pages design consisted using simple drawing and lines to convey the idea.",
+    "project-url": "https://www.behance.net/gallery/35321567/COOKING-BOOK"
+  },
+  {
+    "name": "DUUET Web",
+    "category": [ "app" ],
+    "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg",
+    "author": "peigeng jiang",
+    "completed-date": "",
+    "skills": [],
+    "title": "",
+    "subtitle": "",
+    "body": "",
+    "project-url": ""
+  }
+]

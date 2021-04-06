@@ -22,8 +22,9 @@ namespace PracticeApp1
             PopUpBook popUpBook = new PopUpBook("PopUp Book", "AndyJPG", 30, 2);
             Console.WriteLine(popUpBook.GetString());*/
 
-            //FibonacciNumbers101();
-            ReadJsonFile.ReadPortfolioDataToJson();
+            // FibonacciNumbers101();
+            // ReadJsonFile.ReadPortfolioDataToJson();
+            new AsyncBreakfast();
         }
 
         static void Numbers()

@@ -22,8 +22,25 @@ namespace OneProject.WebSite.Controllers
 
         public JsonFilePortfolioService PortfolioService { get; }
 
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult<Portfolio> GetPortfolioById(string id)
+        {
+            try
+            {
+                return PortfolioService.GetPortfolioById(id);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.ToString());
+            }
+        }
+
         [HttpGet]
-        public PortfolioBrief Get()
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public PortfolioBrief GetPortfolioBrief()
         {
             return PortfolioService.GetPortfoliosBrief();
         }
