@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PracticeApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             /*// Excuting code and test here
             try
@@ -24,7 +25,8 @@ namespace PracticeApp1
 
             // FibonacciNumbers101();
             // ReadJsonFile.ReadPortfolioDataToJson();
-            new AsyncBreakfast();
+            await AsyncBreakfast.MakeBreakfastAsynchronously();
+            //AsyncBreakfast.MakeBreakfastSynchronously();
         }
 
         static void Numbers()
