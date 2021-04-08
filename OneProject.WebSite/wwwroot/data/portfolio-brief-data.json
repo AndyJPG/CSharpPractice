@@ -57,11 +57,6 @@
             "name": "Cooking book",
             "category": [ "graphic design" ],
             "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
-        },
-        {
-            "name": "DUUET Web",
-            "category": [ "app" ],
-            "image-url": "/assets/img/portfolio-img/portfolio-image-1.jpg"
         }
     ]
 }

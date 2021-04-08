@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -92,8 +93,15 @@ namespace OneProject.WebSite.Services
                 }
             }
 
-            return new PortfolioDetail();
-            // throw new KeyNotFoundException($"Id {id} can't be found in database");
+            //return null;
+            throw new ArgumentException($"Id {id} can't be found in database");
+
+            //HttpResponseMessage responseMessage = new HttpResponseMessage(System.Net.HttpStatusCode.NotFound)
+            //{
+            //    Content = new StringContent($"Id {id} can't be found in database")
+            //};
+
+            //throw new HttpResponseException(responseMessage);
         }
     }
 }

@@ -52,6 +52,9 @@ namespace OneProject.WebSite
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+
+                // Register environment-specific exception handling middleware instances
+                app.UseExceptionHandler("/error-local-development");
             }
             else
             {

@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace OneProject.WebSite.Controllers
 {
@@ -25,7 +24,7 @@ namespace OneProject.WebSite.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Portfolio> GetPortfolioById(string id)
+        public ActionResult<PortfolioDetail> GetPortfolioById(string id)
         {
             try
             {
@@ -33,7 +32,7 @@ namespace OneProject.WebSite.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(e.ToString());
+                return NotFound(e.Message);
             }
         }
 
