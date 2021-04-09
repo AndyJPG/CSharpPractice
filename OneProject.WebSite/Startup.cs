@@ -51,7 +51,7 @@ namespace OneProject.WebSite
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                //app.UseDatabaseErrorPage();
 
                 // Register environment-specific exception handling middleware instances
                 app.UseExceptionHandler("/error-local-development");
@@ -62,6 +62,8 @@ namespace OneProject.WebSite
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseStatusCodePagesWithRedirects("/Error?code={0}");
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

@@ -26,7 +26,7 @@ namespace OneProject.WebSite.Controllers
             return Problem(detail: context.Error.StackTrace, title: context.Error.Message);
         }
 
-        [Route("/error")]
-        public IActionResult Error() => Problem();
+        //[Route("/error")]
+        //public IActionResult Error() => Problem();
     }
 }

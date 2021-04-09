@@ -12,6 +12,12 @@ namespace OneProject.WebSite.Pages
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public class ErrorModel : PageModel
     {
+        [BindProperty(Name = "code", SupportsGet = true)]
+        public string ErrorCode { get; set; }
+
+        [BindProperty(Name = "message", SupportsGet = true)]
+        public string ErrorMessage { get; set; }
+
         public string RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);

@@ -40,7 +40,7 @@
                             </div>
                             <div class="portfolio-content">
                                 <a href="@portfolio.ImageUrl" class="portfolio-zoom-button"></a>
-                                <h5><a asp-page="PortfolioDetail/Index" asp-route-id="@portfolio.Id">@portfolio.Name</a></h5>
+                                <h5><a asp-page="PortfolioDetail/Index" asp-route-portfolio_id="@portfolio.Id">@portfolio.Name</a></h5>
                                 @foreach (string category in portfolio.Category)
                                 {
                                     <h6><a href="portfolio.html">@category</a></h6>
