@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Http
 
 <div class="breadcrumb-area bg-grey">
     <div class="container">
@@ -6,12 +7,24 @@
             <h2>@Title.ToUpper()</h2>
             <ul>
                 <li><a href="/">Home</a></li>
+
+                @if (Url != null)
+                {
+                    List<string> urls = Url.Split("/").ToList();
+                    @for (int index = 1; index < urls.Count - 1; index++)
+                    {
+                        <li><a href="/@urls[index]">@urls[index]</a></li>
+                    }
+                }
+
                 <li>@Title</li>
             </ul>
         </div>
     </div>
+    <p></p>
 </div>
-
+c
 @code {
     [Parameter] public string Title { get; set; }
+    [Parameter] public string Url { get; set; }
 }

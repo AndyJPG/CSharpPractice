@@ -2,9 +2,9 @@
 @model OneProject.WebSite.Pages.PortfolioDetail.IndexModel
 @using OneProject.WebSite.Components
 @{
-    ViewData["Title"] = "Title";
+    ViewData["url"] = HttpContext.Request.Path.ToString();
 }
 <!-- Breadcrumb Area -->
-@(await Html.RenderComponentAsync<Breadcrumb>(RenderMode.ServerPrerendered, new { Title = ViewData["Title"] }));
+@(await Html.RenderComponentAsync<Breadcrumb>(RenderMode.ServerPrerendered, new { Title = Model.portfolio.Name, Url = ViewData["url"] }));
 <!--// Breadcrumb Area -->
-<h1>@Model.PortfolioId</h1>
+<h1>@ViewData["url"]</h1>
