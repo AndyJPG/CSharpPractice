@@ -11,25 +11,25 @@
             "id": "op-12",
             "name": "OhFarm",
             "category": [ "app" ],
-            "image-url": "/assets/img/portfolio-img/op-12-ohfarm.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-12-ohfarm.jpg"
         },
         {
             "id": "op-11",
             "name": "DUUET Website",
             "category": [ "web design" ],
-            "image-url": "/assets/img/portfolio-img/op-11-duuet-website.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-11-duuet-website.jpg"
         },
         {
             "id": "op-10",
             "name": "Lighthaus Website",
             "category": [ "web design" ],
-            "image-url": "/assets/img/portfolio-img/op-10-lighthaus.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-10-lighthaus.jpg"
         },
         {
             "id": "op-9",
             "name": "FanFou Website",
             "category": [ "web design" ],
-            "image-url": "/assets/img/portfolio-img/op-9-fanfou.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-9-fanfou.jpg"
         },
         {
             "id": "op-8",
@@ -38,25 +38,25 @@
                 "web design",
                 "branding"
             ],
-            "image-url": "/assets/img/portfolio-img/op-8-destech.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-8-destech.jpg"
         },
         {
             "id": "op-7",
             "name": "Backery project",
             "category": [ "branding" ],
-            "image-url": "/assets/img/portfolio-img/op-7-bakery.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-7-bakery.jpg"
         },
         {
             "id": "op-6",
             "name": "Me book design",
             "category": [ "graphic design" ],
-            "image-url": "/assets/img/portfolio-img/op-6-mebook.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-6-mebook.jpg"
         },
         {
             "id": "op-5",
             "name": "Cooking book",
             "category": [ "graphic design" ],
-            "image-url": "/assets/img/portfolio-img/op-5-cookingbook.jpg"
+            "image-url": "/assets/img/portfolio-img-thumbnail/op-5-cookingbook.jpg"
         }
     ]
 }

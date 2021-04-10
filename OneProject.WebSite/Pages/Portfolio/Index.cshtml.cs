@@ -21,7 +21,7 @@ namespace OneProject.WebSite.Pages
 
         public int NumberOfPortfolios { get; set; }
 
-        public void OnGet([FromQuery(Name = "number_of_portfolios")] int numberOfPortfolios = 3)
+        public void OnGet([FromQuery(Name = "number_of_portfolios")] int numberOfPortfolios = 6)
         {
             // Obtain portfolios
             PortfolioBrief = PortfolioService.GetPortfoliosBrief();
