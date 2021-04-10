@@ -26,13 +26,15 @@
             <div class="row portfolios-wrapper portfolios-zoom-button-holder">
 
                 <!-- Single Portfolio -->
-                @foreach (Models.Portfolio portfolio in Model.PortfolioBrief.Portfolios)
+                @for (int index = 0; index < Model.NumberOfPortfolios; index++)
                 {
+                    Models.Portfolio portfolio = Model.PortfolioBrief.Portfolios[index];
                     string filters = "";
                     foreach (string category in portfolio.Category)
                     {
                         filters += "portfolio-filter-" + category.Replace(" ", "-") + " ";
                     }
+
                     <div class="col-lg-4 col-md-6 col-12 portfolio-item @filters">
                         <div class="portfolio">
                             <div class="portfolio-image">
@@ -49,11 +51,13 @@
                         </div>
                     </div>
                 }
+
                 <!--// Single Portfolio -->
             </div>
             <div class="row">
                 <div class="col-12 text-center mt-5">
-                    <a href="portfolio.html" class="button" data-content="View More">
+                    @{ int numberOfPortfolios = Model.NumberOfPortfolios + 3; }
+                    <a asp-page="Index" asp-route-number_of_portfolios="@numberOfPortfolios" class="button" data-content="View More">
                         <span>View More</span>
                     </a>
                 </div>

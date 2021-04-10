@@ -19,9 +19,22 @@ namespace OneProject.WebSite.Pages
         public JsonFilePortfolioService PortfolioService { get; set; }
         public PortfolioBrief PortfolioBrief { get; set; }
 
-        public void OnGet()
+        public int NumberOfPortfolios { get; set; }
+
+        public void OnGet([FromQuery(Name = "number_of_portfolios")] int numberOfPortfolios = 3)
         {
+            // Obtain portfolios
             PortfolioBrief = PortfolioService.GetPortfoliosBrief();
+
+            // Present how many portfolios
+            if (numberOfPortfolios >= PortfolioBrief.Portfolios.Count)
+            {
+                NumberOfPortfolios = PortfolioBrief.Portfolios.Count;
+            }
+            else
+            {
+                NumberOfPortfolios = numberOfPortfolios;
+            }
         }
     }
 }
