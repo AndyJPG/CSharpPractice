@@ -1,0 +1,80 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@using OneProject.WebSite.Services
+
+@inject JsonFilePortfolioService PortfolioService
+
+@{ Models.PortfolioBrief portfolioBrief = PortfolioService.GetPortfoliosBrief(); }
+<!-- Portfolio list -->
+<!-- Portfolios Ara -->
+<div class="cr-section portfolios-area section-padding-lg bg-white">
+    <div class="container">
+
+        <div class="portfolio-filters text-center">
+            <button data-filter="*" class="is-checked">ALL</button>
+            @foreach (string category in portfolioBrief.Categories)
+            {
+                <button data-filter="@(".portfolio-filter-" + category.Replace(" ", "-"))">@category.ToUpper()</button>
+            }
+        </div>
+
+        <div class="row portfolios-wrapper portfolios-zoom-button-holder">
+
+            <!-- Single Portfolio -->
+            @for (int index = 0; index < numberOfPortfolios; index++)
+            {
+                Models.Portfolio portfolio = portfolioBrief.Portfolios[index];
+                string filters = "";
+                foreach (string category in portfolio.Category)
+                {
+                    filters += "portfolio-filter-" + category.Replace(" ", "-") + " ";
+                }
+
+                <div class="col-lg-4 col-md-6 col-12 portfolio-item @filters">
+                    <div class="portfolio">
+                        <div class="portfolio-image">
+                            <img src="@portfolio.ImageUrl" alt="portfolio image">
+                        </div>
+                        <div class="portfolio-content">
+                            <a href="@portfolio.ImageUrl" class="portfolio-zoom-button"></a>
+                            <h5><a asp-page="PortfolioDetail/Index" asp-route-portfolio_id="@portfolio.Id">@portfolio.Name</a></h5>
+                            @foreach (string category in portfolio.Category)
+                            {
+                                <h6>@category</h6>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <!--// Single Portfolio -->
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                @numberOfPortfolios
+                <a asp-page="Index" asp-route-number_of_portfolios="@numberOfPortfolios" class="button" data-content="View More">
+                    <span>View More</span>
+                </a>
+            </div>
+        </div>
+
+        <h1>Counter</h1>
+
+        <p>Current count: @currentCount</p>
+
+        <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+    </div>
+</div>
+<!--// Portfolios Ara -->
+
+@code {
+    int numberOfPortfolios = 6;
+
+    private int currentCount = 0;
+
+    void IncrementCount()
+    {
+        currentCount++;
+
+        System.Diagnostics.Debug.WriteLine($"Current count {currentCount}");
+    }
+}

@@ -10,6 +10,8 @@
 <!--// Breadcrumb Area -->
 <!-- Page Conttent -->
 <main class="page-content">
+    <!-- Portfolios component -->
+    @(await Html.RenderComponentAsync<PortfolioList>(RenderMode.ServerPrerendered));
 
     <!-- Portfolios Ara -->
     <div class="cr-section portfolios-area section-padding-lg bg-white">
@@ -66,3 +68,5 @@
     </div>
     <!--// Portfolios Ara -->
 </main>
+
+<script src="_framework/blazor.server.js"></script>

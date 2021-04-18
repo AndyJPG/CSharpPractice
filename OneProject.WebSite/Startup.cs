@@ -78,6 +78,7 @@ namespace OneProject.WebSite
                 endpoints.MapRazorPages();
                 // Add controllers at service and map with endpoints
                 endpoints.MapControllers();
+                endpoints.MapBlazorHub();
             });
         }
     }
